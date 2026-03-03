@@ -63,7 +63,7 @@
                   <div class="image-animate media{% if section.blocks.size > 1 %} media--{{ section.settings.image_ratio }}{% endif %} media--hover-effect overflow-hidden"
                     style="--image-position: {{ block.settings.image_position }};{% if section.settings.image_ratio == 'adapt' and section.blocks.size > 1 %}--image-ratio-percent: {{ 1 | divided_by: featured_image.aspect_ratio | times: 100 }}%;{% endif %}"
                   >
-                    {%- assign alt = featured_image.alt | escape | split: '#' | first -%}
+                    {%- assign alt = featured_image.alt | escape | split: '#' | first | default: card_collection.title -%}
                     {{ featured_image | image_url: width: 1500 | image_tag:
                       loading: 'lazy',
                       class: 'motion-reduce',
