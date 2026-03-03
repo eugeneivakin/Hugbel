@@ -1,1 +1,443 @@
-{"sections":{"slideshow_kGNQeA":{"type":"slideshow","blocks":{"image_iFAhn9":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Screenshot_2025-12-28_at_10.34.29_PM.png","image_mobile":"shopify:\/\/shop_images\/Screenshot_2025-12-28_at_10.34.29_PM.png","image_position":"center center","text_box_position":"bottom-center","subheading":"","subheading_size":"h4","heading":"","heading_size":"h1","heading_tag":"h2","text":"","text_size":"typeset","button_label":"Explore Offers","button_link":"shopify:\/\/collections\/special-price","button_size":"large","button_style_secondary":false}}},"block_order":["image_iFAhn9"],"disabled":true,"settings":{"slideshow_type":"legacy","text_alignment":"center","image_ratio":"adapt_first","autorotate":false,"autorotate_speed":5,"full_width":true,"mobile_text_alignment":"center","mobile_image_ratio":"adapt_first","show_text_below":false,"colors_button_label":"#000000","colors_button_background":"#ffffff","colors_text":"#ffffff","colors_background":"#000000","colors_overlay":"#ffffff","colors_overlay_opacity":0,"colors_navigation_text":"#000000","colors_navigation_background":"#ffffff","padding_top":0,"padding_bottom":0}},"video_hero_FEny4m":{"type":"video-hero","blocks":{"heading_kj36Y4":{"type":"heading","settings":{"heading":"Light That Elevates the Everyday, Brought to You by Hugbel","heading_size":"h2","heading_tag":"h2"}},"button_fhgcfr":{"type":"button","settings":{"button_label":"Discover our collections","button_link":"shopify:\/\/collections\/all","button_size":"medium","button_style_secondary":false}}},"block_order":["heading_kj36Y4","button_fhgcfr"],"settings":{"video_url":"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ab81e773d27f4108982a522ae5d509e3.mp4","text_box_position":"bottom-left","text_alignment":"center","image_ratio":"650px","show_text_box":false,"full_width":true,"show_divider":false,"mobile_text_alignment":"center","mobile_image_ratio":"auto","show_text_below":false,"colors_button_label":"#1a1b18","colors_button_background":"#ffffff","colors_text":"#ffffff","colors_overlay":"#000000","colors_overlay_opacity":0,"padding_top":0,"padding_bottom":0}},"images_with_text_BpYfip":{"type":"images-with-text","blocks":{"heading_Aww9WN":{"type":"heading","settings":{"heading":"Elevate The Way Your Home Feels","heading_size":"h2","heading_tag":"h2"}},"text_nhBCmQ":{"type":"text","settings":{"text":"<p>Discover lighting and home pieces crafted with quiet precision — designed for the way light moves, settles, and transforms a room.<\/p><p>Warm glow through thoughtful materials, a calm, grounding presence in every detail.<\/p><p>Pieces that elevate the atmosphere and stand with grace over time.<\/p>","text_size":"typeset2","secondary_color":false}},"button_KVb8xp":{"type":"button","settings":{"button_label":"SHOP ALL","button_link":"shopify:\/\/collections\/all","button_size":"large","button_style_secondary":false}}},"block_order":["heading_Aww9WN","text_nhBCmQ","button_KVb8xp"],"settings":{"image":"shopify:\/\/shop_images\/8_a91a1cfe-34a9-4a91-8055-f909e1876bbd.png","image_2":"shopify:\/\/shop_images\/0x1512_168179923086e6205217_1728357711407.jpg","image_3":"shopify:\/\/shop_images\/download_21_ab1b01c8-e1db-41d0-a06f-cac3a3db276c.jpg","image_4":"shopify:\/\/shop_images\/Vitre_LED_Chandelier__6_1500x1500_a3329004-1cbb-410d-9c76-e79968f885d3.jpg","image_ratio":"portrait","image_position":"center center","layout":"image_first","text_box_position":"middle","text_alignment":"left","mobile_text_alignment":"left","full_width":false,"show_divider":false,"padding_top":36,"padding_bottom":36}},"collection_list_NqCTYF":{"type":"collection-list","blocks":{"featured_collection_dpcm3x":{"type":"featured_collection","settings":{"collection":"japandi","image":"shopify:\/\/shop_images\/Japanese-Modern-Pendant-Lamp-for-Living-Dining-Room-Bedside-Study-Ceiling-Chandeliers-Home-Decoration-Indoor-Lighting.webp","image_position":"center center"}},"featured_collection_qLbJ37":{"type":"featured_collection","settings":{"collection":"marble","image":"shopify:\/\/shop_images\/O1CN01DHwhnt23DH0CVePRB__2218875297221-0-cib.jpg","image_position":"center center"}},"featured_collection_xNFh3X":{"type":"featured_collection","settings":{"collection":"nordic","image":"shopify:\/\/shop_images\/7_5e70ec96-ff17-4b1b-b8b8-7bdcc747c788.jpg","image_position":"center center"}}},"block_order":["featured_collection_dpcm3x","featured_collection_qLbJ37","featured_collection_xNFh3X"],"settings":{"show_view_all":false,"show_divider":true,"heading":"Featured Collections","heading_size":"h2","heading_alignment":"left","heading_tag":"h2","columns_mobile":"2","swipe_on_mobile":true,"image_ratio":"portrait","apply_overlay":true,"padding_top":36,"padding_bottom":36}},"collection_list_XCN7mr":{"type":"collection-list","blocks":{"featured_collection_3WAt6D":{"type":"featured_collection","settings":{"collection":"travertine","image":"shopify:\/\/shop_images\/Aplomb_Pendant_Lamp_11.jpg","image_position":"center center"}},"featured_collection_kRQxRR":{"type":"featured_collection","settings":{"collection":"ceiling-lamps","image":"shopify:\/\/shop_images\/O1CN01ctrKJE1IuyohuVSTy__2217532450954-0-cib.jpg","image_position":"center center"}},"featured_collection_RHVCen":{"type":"featured_collection","settings":{"collection":"special-price","image":"shopify:\/\/shop_images\/black_white_simple_sale_logo_2.png","image_position":"center center"}}},"block_order":["featured_collection_3WAt6D","featured_collection_kRQxRR","featured_collection_RHVCen"],"settings":{"show_view_all":false,"show_divider":false,"heading":"","heading_size":"h2","heading_alignment":"left","heading_tag":"h2","columns_mobile":"2","swipe_on_mobile":true,"image_ratio":"portrait","apply_overlay":true,"padding_top":36,"padding_bottom":36}},"judgeme_carousel_section_9fBdRB":{"type":"judgeme_carousel_section","settings":{"maxwidth":1720}},"custom_liquid_mApfX6":{"type":"custom-liquid","name":"t:sections.custom-liquid.presets.name","settings":{"custom_liquid":"<div class=\"hugbel-instagram-banner\" style=\"padding: 30px 0; background-color: #f8f8f8; text-align: center; overflow: hidden;\">\n  <div style=\"max-width: 1400px; margin: 0 auto;\">\n\n    <!-- Scrolling Banner -->\n    <div style=\"display: inline-block; white-space: nowrap; animation: scroll-left 40s linear infinite;\">\n      <img \n        src=\"{{ 'hugbel_instagram_banner.jpg' | file_url }}\" \n        alt=\"Hugbel Instagram Mentions\" \n        style=\"height: auto; max-height: 320px; display: inline-block; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);\"\n      >\n    <\/div>\n\n    <!-- Call to Action -->\n    <p style=\"font-size: 17px; margin: 20px 0 10px; color: #333;\">\n      Tag <strong>@thehugbel<\/strong> on Instagram to be featured!\n    <\/p>\n\n    <!-- Instagram Button -->\n    <a href=\"https:\/\/www.instagram.com\/thehugbel\" target=\"_blank\" \n       style=\"display: inline-block; background-color: #000; color: #fff; text-decoration: none; padding: 10px 22px; border-radius: 30px; font-size: 15px; font-weight: 500;\">\n      Follow us on Instagram\n    <\/a>\n\n  <\/div>\n<\/div>\n\n<!-- Scrolling Animation -->\n<style>\n@keyframes scroll-left {\n  0% { transform: translateX(0); }\n  100% { transform: translateX(-50%); }\n}\n<\/style>","full_width":true,"show_divider":false,"padding_top":0,"padding_bottom":0}},"guarantees_Pcf4kw":{"type":"guarantees","blocks":{"guarantee_R3xUYt":{"type":"guarantee","settings":{"icon":"shield","icon_size":"medium","custom_icon":"","title":"30 DAY GUARANTEE","title_size":"h3","text":"<p>Not your taste? - No problem! You can always return or exchange. We offer a 30-day return or exchange policy<\/p>"}},"guarantee_fLFFeq":{"type":"guarantee","settings":{"icon":"truck","icon_size":"medium","custom_icon":"","title":"EXPRESS SHIPPING","title_size":"h3","text":"<p>We deliver with the fast and most reliable service. Free shipping automatically applies to all orders<\/p>"}},"guarantee_XEihap":{"type":"guarantee","settings":{"icon":"star","icon_size":"medium","custom_icon":"","title":"2 YEARS WARRANTY","title_size":"h3","text":"<p>Our high quality standards ensure each product is crafted with the finest materials and meticulous attention to detail<\/p>"}},"guarantee_7RtUej":{"type":"guarantee","disabled":true,"settings":{"icon":"truck","icon_size":"medium","custom_icon":"","title":"Guarantee heading","title_size":"h3","text":"<p>Welcome to our store.<\/p>"}}},"block_order":["guarantee_R3xUYt","guarantee_fLFFeq","guarantee_XEihap","guarantee_7RtUej"],"settings":{"layout":"default","column_alignment":"center","horizontal_content":false,"full_width":true,"show_divider":true,"heading":"","heading_size":"h1","heading_tag":"h2","columns_mobile":"1","swipe_on_mobile":false,"use_custom_colors":true,"colors_icon":"#ffffff","colors_text":"#000000","colors_background":"#f3f3f3","gradient_background":"","padding_top":24,"padding_bottom":64}},"featured_collection_FeihHe":{"type":"featured-collection","settings":{"collection":"frontpage","products_to_show":8,"show_view_all":false,"show_divider":false,"heading":"Our Bestseller","heading_size":"h2","heading_alignment":"left","heading_tag":"h2","columns_mobile":"2","swipe_on_mobile":false,"image_ratio":"portrait","image_position":"center center","enable_image_fill":true,"show_secondary_image":true,"secondary_image_max":1,"show_vendor":false,"show_rating":true,"show_quick_buy":true,"enable_quick_view":true,"enable_color_swatches":false,"enable_countdown":true,"padding_top":36,"padding_bottom":36}},"image_banner_gNdahF":{"type":"image-banner","blocks":{"heading_BVptR8":{"type":"heading","settings":{"heading":"Together, We’ll Shape the Light Your Home Needs","heading_size":"h2","heading_tag":"h2"}},"text_ALgEDV":{"type":"text","settings":{"text":"<p>Lighting crafted with quiet precision — made to bring warmth, clarity, and intention to your home.<\/p><p>Every material and detail is considered for how it shapes your space, creating light that feels both beautiful and genuinely useful.<\/p><p>If you’d like help choosing a piece or exploring personalised and custom options, we’re here with calm, thoughtful guidance — tailored to you and the way you live.<\/p>","text_size":"typeset","secondary_color":false}},"button_VHJkTi":{"type":"button","settings":{"button_label":"contact us","button_link":"shopify:\/\/pages\/contact","button_size":"medium","button_style_secondary":false}}},"block_order":["heading_BVptR8","text_ALgEDV","button_VHJkTi"],"settings":{"image":"shopify:\/\/shop_images\/O1CN01g5CUJb1DLe5LP0c2R__2210957790200-0-cib.jpg","image_position":"center center","text_box_position":"middle-center","text_alignment":"center","image_ratio":"500px","show_text_box":false,"full_width":true,"show_divider":false,"mobile_text_alignment":"center","mobile_image_ratio":"100vh","stack_images_on_mobile":true,"show_text_below":true,"colors_button_label":"#1a1b18","colors_button_background":"#ffffff","colors_text":"#ffffff","colors_overlay":"#000000","colors_overlay_opacity":24,"padding_top":0,"padding_bottom":0}}},"order":["slideshow_kGNQeA","video_hero_FEny4m","images_with_text_BpYfip","collection_list_NqCTYF","collection_list_XCN7mr","judgeme_carousel_section_9fBdRB","custom_liquid_mApfX6","guarantees_Pcf4kw","featured_collection_FeihHe","image_banner_gNdahF"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_kGNQeA": {
+      "type": "slideshow",
+      "blocks": {
+        "image_iFAhn9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-12-28_at_10.34.29_PM.png",
+            "image_mobile": "shopify://shop_images/Screenshot_2025-12-28_at_10.34.29_PM.png",
+            "image_position": "center center",
+            "text_box_position": "bottom-center",
+            "subheading": "",
+            "subheading_size": "h4",
+            "heading": "",
+            "heading_size": "h1",
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": "typeset",
+            "button_label": "Explore Offers",
+            "button_link": "shopify://collections/special-price",
+            "button_size": "large",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "image_iFAhn9"
+      ],
+      "disabled": true,
+      "settings": {
+        "slideshow_type": "legacy",
+        "text_alignment": "center",
+        "image_ratio": "adapt_first",
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "full_width": true,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "adapt_first",
+        "show_text_below": false,
+        "colors_button_label": "#000000",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_background": "#000000",
+        "colors_overlay": "#ffffff",
+        "colors_overlay_opacity": 0,
+        "colors_navigation_text": "#000000",
+        "colors_navigation_background": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "video_hero_FEny4m": {
+      "type": "video-hero",
+      "blocks": {
+        "heading_kj36Y4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Light That Elevates the Everyday, Brought to You by Hugbel",
+            "heading_size": "h2",
+            "heading_tag": "h2"
+          }
+        },
+        "button_fhgcfr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover our collections",
+            "button_link": "shopify://collections/all",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kj36Y4",
+        "button_fhgcfr"
+      ],
+      "settings": {
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/ab81e773d27f4108982a522ae5d509e3.mp4",
+        "text_box_position": "bottom-left",
+        "text_alignment": "center",
+        "image_ratio": "650px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "show_text_below": false,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_FeihHe": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "frontpage",
+        "products_to_show": 8,
+        "show_view_all": false,
+        "show_divider": false,
+        "heading": "Our Bestseller",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "portrait",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "secondary_image_max": 1,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": false,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "images_with_text_BpYfip": {
+      "type": "images-with-text",
+      "blocks": {
+        "heading_Aww9WN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Elevate The Way Your Home Feels",
+            "heading_size": "h2",
+            "heading_tag": "h2"
+          }
+        },
+        "text_nhBCmQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover lighting and home pieces crafted with quiet precision — designed for the way light moves, settles, and transforms a room.</p><p>Warm glow through thoughtful materials, a calm, grounding presence in every detail.</p><p>Pieces that elevate the atmosphere and stand with grace over time.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "button_KVb8xp": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP ALL",
+            "button_link": "shopify://collections/all",
+            "button_size": "large",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Aww9WN",
+        "text_nhBCmQ",
+        "button_KVb8xp"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/8_a91a1cfe-34a9-4a91-8055-f909e1876bbd.png",
+        "image_2": "shopify://shop_images/0x1512_168179923086e6205217_1728357711407.jpg",
+        "image_3": "shopify://shop_images/download_21_ab1b01c8-e1db-41d0-a06f-cac3a3db276c.jpg",
+        "image_4": "shopify://shop_images/Vitre_LED_Chandelier__6_1500x1500_a3329004-1cbb-410d-9c76-e79968f885d3.jpg",
+        "image_ratio": "portrait",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "full_width": false,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_NqCTYF": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_dpcm3x": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "japandi",
+            "image": "shopify://shop_images/Japanese-Modern-Pendant-Lamp-for-Living-Dining-Room-Bedside-Study-Ceiling-Chandeliers-Home-Decoration-Indoor-Lighting.webp",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_qLbJ37": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "marble",
+            "image": "shopify://shop_images/O1CN01DHwhnt23DH0CVePRB__2218875297221-0-cib.jpg",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_xNFh3X": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nordic",
+            "image": "shopify://shop_images/7_5e70ec96-ff17-4b1b-b8b8-7bdcc747c788.jpg",
+            "image_position": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_dpcm3x",
+        "featured_collection_qLbJ37",
+        "featured_collection_xNFh3X"
+      ],
+      "settings": {
+        "show_view_all": false,
+        "show_divider": true,
+        "heading": "Featured Collections",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "apply_overlay": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_XCN7mr": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_3WAt6D": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "travertine",
+            "image": "shopify://shop_images/Aplomb_Pendant_Lamp_11.jpg",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_kRQxRR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ceiling-lamps",
+            "image": "shopify://shop_images/O1CN01ctrKJE1IuyohuVSTy__2217532450954-0-cib.jpg",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_RHVCen": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "special-price",
+            "image": "shopify://shop_images/black_white_simple_sale_logo_2.png",
+            "image_position": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_3WAt6D",
+        "featured_collection_kRQxRR",
+        "featured_collection_RHVCen"
+      ],
+      "settings": {
+        "show_view_all": false,
+        "show_divider": false,
+        "heading": "",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "apply_overlay": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "judgeme_carousel_section_9fBdRB": {
+      "type": "judgeme_carousel_section",
+      "settings": {
+        "maxwidth": 1720
+      }
+    },
+    "custom_liquid_mApfX6": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"hugbel-instagram-banner\" style=\"padding: 30px 0; background-color: #f8f8f8; text-align: center; overflow: hidden;\">\n  <div style=\"max-width: 1400px; margin: 0 auto;\">\n\n    <!-- Scrolling Banner -->\n    <div style=\"display: inline-block; white-space: nowrap; animation: scroll-left 40s linear infinite;\">\n      <img \n        src=\"{{ 'hugbel_instagram_banner.jpg' | file_url }}\" \n        alt=\"Hugbel Instagram Mentions\" \n        style=\"height: auto; max-height: 320px; display: inline-block; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);\"\n      >\n    </div>\n\n    <!-- Call to Action -->\n    <p style=\"font-size: 17px; margin: 20px 0 10px; color: #333;\">\n      Tag <strong>@thehugbel</strong> on Instagram to be featured!\n    </p>\n\n    <!-- Instagram Button -->\n    <a href=\"https://www.instagram.com/thehugbel\" target=\"_blank\" \n       style=\"display: inline-block; background-color: #000; color: #fff; text-decoration: none; padding: 10px 22px; border-radius: 30px; font-size: 15px; font-weight: 500;\">\n      Follow us on Instagram\n    </a>\n\n  </div>\n</div>\n\n<!-- Scrolling Animation -->\n<style>\n@keyframes scroll-left {\n  0% { transform: translateX(0); }\n  100% { transform: translateX(-50%); }\n}\n</style>",
+        "full_width": true,
+        "show_divider": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "guarantees_Pcf4kw": {
+      "type": "guarantees",
+      "blocks": {
+        "guarantee_R3xUYt": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "shield",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "30 DAY GUARANTEE",
+            "title_size": "h3",
+            "text": "<p>Not your taste? - No problem! You can always return or exchange. We offer a 30-day return or exchange policy</p>"
+          }
+        },
+        "guarantee_fLFFeq": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "EXPRESS SHIPPING",
+            "title_size": "h3",
+            "text": "<p>We deliver with the fast and most reliable service. Free shipping automatically applies to all orders</p>"
+          }
+        },
+        "guarantee_XEihap": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "star",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "2 YEARS WARRANTY",
+            "title_size": "h3",
+            "text": "<p>Our high quality standards ensure each product is crafted with the finest materials and meticulous attention to detail</p>"
+          }
+        },
+        "guarantee_7RtUej": {
+          "type": "guarantee",
+          "disabled": true,
+          "settings": {
+            "icon": "truck",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Guarantee heading",
+            "title_size": "h3",
+            "text": "<p>Welcome to our store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee_R3xUYt",
+        "guarantee_fLFFeq",
+        "guarantee_XEihap",
+        "guarantee_7RtUej"
+      ],
+      "settings": {
+        "layout": "default",
+        "column_alignment": "center",
+        "horizontal_content": false,
+        "full_width": true,
+        "show_divider": true,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "use_custom_colors": true,
+        "colors_icon": "#ffffff",
+        "colors_text": "#000000",
+        "colors_background": "#f3f3f3",
+        "gradient_background": "",
+        "padding_top": 24,
+        "padding_bottom": 64
+      }
+    },
+    "image_banner_gNdahF": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_BVptR8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Together, We’ll Shape the Light Your Home Needs",
+            "heading_size": "h2",
+            "heading_tag": "h2"
+          }
+        },
+        "text_ALgEDV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lighting crafted with quiet precision — made to bring warmth, clarity, and intention to your home.</p><p>Every material and detail is considered for how it shapes your space, creating light that feels both beautiful and genuinely useful.</p><p>If you’d like help choosing a piece or exploring personalised and custom options, we’re here with calm, thoughtful guidance — tailored to you and the way you live.</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "button_VHJkTi": {
+          "type": "button",
+          "settings": {
+            "button_label": "contact us",
+            "button_link": "shopify://pages/contact",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BVptR8",
+        "text_ALgEDV",
+        "button_VHJkTi"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/O1CN01g5CUJb1DLe5LP0c2R__2210957790200-0-cib.jpg",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "500px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "100vh",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 24,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "slideshow_kGNQeA",
+    "video_hero_FEny4m",
+    "featured_collection_FeihHe",
+    "images_with_text_BpYfip",
+    "collection_list_NqCTYF",
+    "collection_list_XCN7mr",
+    "judgeme_carousel_section_9fBdRB",
+    "custom_liquid_mApfX6",
+    "guarantees_Pcf4kw",
+    "image_banner_gNdahF"
+  ]
+}
