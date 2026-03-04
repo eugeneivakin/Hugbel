@@ -9,7 +9,13 @@
   }
 {%- endstyle -%}
 
-{{ 'section-footer.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'section-footer.css' | asset_url | stylesheet_tag }} {% endcomment %}
+<link
+  rel="stylesheet"
+  href="{{ 'section-footer.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'"
+>
 
 <link rel="stylesheet" href="{{ 'component-newsletter.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-accordion.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -41,7 +47,10 @@
           <div class="grid__item footer__content-left{% if section.blocks.size == 4 and enable_right_column %} footer__content-left--alt{% endif %}{% if section.blocks.size == 1 and enable_right_column == false %} footer__content-left--only{% endif %}">
             <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet">
               {%- for block in section.blocks -%}
-                <footer-accordion class="accordion footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+                <footer-accordion
+                  class="accordion footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
                   <details open>
                     <summary tabindex="-1">
                       <p class="h4 accordion__title">{{ block.settings.heading | escape }}</p>
@@ -57,7 +66,10 @@
                           <ul class="footer-block__details-content list-unstyled">
                             {%- for link in block.settings.menu.links -%}
                               <li>
-                                <a href="{{ link.url }}" class="link list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                                <a
+                                  href="{{ link.url }}"
+                                  class="link list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                                >
                                   {{ link.title }}
                                 </a>
                               </li>
@@ -69,23 +81,23 @@
                           {%- if block.settings.link != blank -%}
                             <a href="{{ block.settings.link }}">
                           {%- endif -%}
-                            {%- if block.settings.image != blank -%}
-                              {%- liquid
-                                assign image_width = block.settings.image_width
-                                assign image_width_2x = block.settings.image_width | times: 2
-                              -%}
-                              <img
-                                srcset= "{{ block.settings.image | image_url: width: image_width }}, {{ block.settings.image | image_url: width: image_width_2x }} 2x"
-                                src="{{ block.settings.image | image_url: width: image_width }}"
-                                alt="{{ block.settings.image.alt | escape }}"
-                                loading="lazy"
-                                width="{{ block.settings.image.width }}"
-                                height="{{ block.settings.image.height }}"
-                                style="max-width: min(100%, {{ image_width }}px);"
-                              />
-                            {%- else -%}
-                              {{ 'image' | placeholder_svg_tag: 'placeholder' }}
-                            {%- endif -%}
+                          {%- if block.settings.image != blank -%}
+                            {%- liquid
+                              assign image_width = block.settings.image_width
+                              assign image_width_2x = block.settings.image_width | times: 2
+                            -%}
+                            <img
+                              srcset="{{ block.settings.image | image_url: width: image_width }}, {{ block.settings.image | image_url: width: image_width_2x }} 2x"
+                              src="{{ block.settings.image | image_url: width: image_width }}"
+                              alt="{{ block.settings.image.alt | escape }}"
+                              loading="lazy"
+                              width="{{ block.settings.image.width }}"
+                              height="{{ block.settings.image.height }}"
+                              style="max-width: min(100%, {{ image_width }}px);"
+                            >
+                          {%- else -%}
+                            {{ 'image' | placeholder_svg_tag: 'placeholder' }}
+                          {%- endif -%}
                           {%- if block.settings.link != blank -%}
                             </a>
                           {%- endif -%}
@@ -118,7 +130,7 @@
                       <div class="footer-block__details-content">
                         <div class="footer-block__newsletter">
                           {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
-                            <input type="hidden" name="contact[tags]" value="newsletter"/>
+                            <input type="hidden" name="contact[tags]" value="newsletter">
 
                             <div class="field">
                               <input
@@ -140,19 +152,27 @@
                                 {% endif %}
                                 placeholder="{{ 'newsletter.label' | t }}"
                                 required
-                              />
-                              <label class="visually-hidden" for="ContactFooter-email">{{ 'newsletter.label' | t }}</label>
-                              <button type="submit" class="button button--arrow field__button animate-arrow" name="commit" aria-label="{{ 'newsletter.button_label' | t }}">
+                              >
+                              <label class="visually-hidden" for="ContactFooter-email">
+                                {{- 'newsletter.label' | t -}}
+                              </label>
+                              <button
+                                type="submit"
+                                class="button button--arrow field__button animate-arrow"
+                                name="commit"
+                                aria-label="{{ 'newsletter.button_label' | t }}"
+                              >
                                 {% render 'icon', icon: 'arrow' %}
                               </button>
                             </div>
                             {%- if form.errors -%}
                               <small class="form__message errors" id="ContactFooter-error">
                                 {% render 'icon', icon: 'error' %}
-                                {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+                                {{ form.errors.translated_fields.email | capitalize }}
+                                {{ form.errors.messages.email }}
                               </small>
                             {%- endif -%}
-                            
+
                             <div class="typeset rte">
                               {{ section.settings.newsletter_text }}
                             </div>
@@ -163,15 +183,16 @@
                                 {{ 'newsletter.success' | t }}
                               </p>
                             {%- endif -%}
-                            
                           {%- endform -%}
                         </div>
-                
+
                         {%- if section.settings.show_social -%}
                           <p class="h4 accordion__title">{{ section.settings.social_heading | escape }}</p>
                           <ul class="footer__list-social list-unstyled list-social" role="list">
                             {% render 'social-icons' %}
-                            <li class="list-social__item--placeholder">{{ 'sections.footer.social_placeholder' | t }}</li>
+                            <li class="list-social__item--placeholder">
+                              {{ 'sections.footer.social_placeholder' | t }}
+                            </li>
                           </ul>
                         {%- endif -%}
                       </div>
@@ -189,7 +210,7 @@
                           {% render 'social-icons' %}
                           <li class="list-social__item--placeholder">{{ 'sections.footer.social_placeholder' | t }}</li>
                         </ul>
-                        </div>
+                      </div>
                     </details>
                   </footer-accordion>
                 {%- endif -%}
@@ -205,12 +226,19 @@
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__column--info">
         <div class="footer__copyright">
-          <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}. {{ section.settings.copyright_text }}</small>
+          <small class="copyright__content"
+            >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url }}.
+            {{ section.settings.copyright_text -}}
+          </small>
           <ul class="policies list-unstyled">
             {%- if section.settings.show_policy -%}
               {%- for policy in shop.policies -%}
                 {%- if policy != blank -%}
-                  <li><small class="copyright__content"><a href="{{ policy.url }}">{{ policy.title }}</a></small></li>
+                  <li>
+                    <small class="copyright__content"
+                      ><a href="{{ policy.url }}">{{ policy.title }}</a></small
+                    >
+                  </li>
                 {%- endif -%}
               {%- endfor -%}
             {%- endif -%}
@@ -223,10 +251,22 @@
             <noscript>
               {%- form 'localization', id: 'FooterLanguageFormNoScript', class: 'localization-form' -%}
                 <div class="localization-form__select">
-                  <p class="visually-hidden" id="FooterLanguageLabelNoScript">{{ 'localization.language_label' | t }}</p>
-                  <select class="localization-selector link" name="locale_code" aria-labelledby="FooterLanguageLabelNoScript">
+                  <p class="visually-hidden" id="FooterLanguageLabelNoScript">
+                    {{ 'localization.language_label' | t }}
+                  </p>
+                  <select
+                    class="localization-selector link"
+                    name="locale_code"
+                    aria-labelledby="FooterLanguageLabelNoScript"
+                  >
                     {%- for language in localization.available_languages -%}
-                      <option value="{{ language.iso_code }}" lang="{{ language.iso_code }}" {%- if language.iso_code == localization.language.iso_code %} selected{% endif %}>
+                      <option
+                        value="{{ language.iso_code }}"
+                        lang="{{ language.iso_code }}"
+                        {%- if language.iso_code == localization.language.iso_code %}
+                          selected
+                        {% endif %}
+                      >
                         {{ language.endonym_name | capitalize }}
                       </option>
                     {%- endfor -%}
@@ -241,21 +281,40 @@
                 <div class="no-js-hidden">
                   <span class="visually-hidden" id="FooterLanguageLabel">{{ 'localization.language_label' | t }}</span>
                   <div class="disclosure">
-                    <button type="button" class="disclosure__button localization-form__select localization-selector link link--text link-with-icon" aria-expanded="false" aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel">
+                    <button
+                      type="button"
+                      class="disclosure__button localization-form__select localization-selector link link--text link-with-icon"
+                      aria-expanded="false"
+                      aria-controls="FooterLanguageList"
+                      aria-describedby="FooterLanguageLabel"
+                    >
                       {% render 'icon', icon: 'localization' %}
                       <span class="label">{{ localization.language.endonym_name | capitalize }}</span>
                       {% render 'icon', icon: 'caret' %}
                     </button>
                     <ul id="FooterLanguageList" role="list" class="disclosure__list list-unstyled" hidden>
                       <li class="disclosure__item" tabindex="-1">
-                        <a class="disclosure__link link disclosure__link--active focus-inset" href="#" hreflang="{{ localization.language.iso_code }}" lang="{{ localization.language.iso_code }}" aria-current="true" data-value="{{ localization.language.iso_code }}">
+                        <a
+                          class="disclosure__link link disclosure__link--active focus-inset"
+                          href="#"
+                          hreflang="{{ localization.language.iso_code }}"
+                          lang="{{ localization.language.iso_code }}"
+                          aria-current="true"
+                          data-value="{{ localization.language.iso_code }}"
+                        >
                           {{ localization.language.endonym_name | capitalize }}
                         </a>
                       </li>
                       {%- for language in localization.available_languages -%}
                         {%- if language.iso_code != localization.language.iso_code -%}
                           <li class="disclosure__item" tabindex="-1">
-                            <a class="disclosure__link link focus-inset" href="#" hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}" data-value="{{ language.iso_code }}">
+                            <a
+                              class="disclosure__link link focus-inset"
+                              href="#"
+                              hreflang="{{ language.iso_code }}"
+                              lang="{{ language.iso_code }}"
+                              data-value="{{ language.iso_code }}"
+                            >
                               {{ language.endonym_name | capitalize }}
                             </a>
                           </li>
@@ -263,7 +322,7 @@
                       {%- endfor -%}
                     </ul>
                   </div>
-                  <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}"/>
+                  <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
                 </div>
               {%- endform -%}
             </localization-form>
@@ -274,10 +333,20 @@
               {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
                 <div class="localization-form__select">
                   <p class="visually-hidden" id="FooterCountryLabelNoScript">{{ 'localization.country_label' | t }}</p>
-                  <select class="localization-selector link" name="country_code" aria-labelledby="FooterCountryLabelNoScript">
+                  <select
+                    class="localization-selector link"
+                    name="country_code"
+                    aria-labelledby="FooterCountryLabelNoScript"
+                  >
                     {%- for country in localization.available_countries -%}
-                      <option value="{{ country.iso_code }}" {%- if country.iso_code == localization.country.iso_code %} selected{% endif %}>
-                        {{ country.currency.iso_code }} {{ country.currency.symbol }}
+                      <option
+                        value="{{ country.iso_code }}"
+                        {%- if country.iso_code == localization.country.iso_code %}
+                          selected
+                        {% endif %}
+                      >
+                        {{ country.currency.iso_code }}
+                        {{ country.currency.symbol }}
                       </option>
                     {%- endfor -%}
                   </select>
@@ -291,31 +360,49 @@
                 <div class="no-js-hidden">
                   <span class="visually-hidden" id="FooterCountryLabel">{{ 'localization.country_label' | t }}</span>
                   <div class="disclosure">
-                    <button type="button" class="disclosure__button localization-form__select localization-selector link link--text link-with-icon" aria-expanded="false" aria-controls="FooterCountryList" aria-describedby="FooterCountryLabel">
-                      {%- unless section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+                    <button
+                      type="button"
+                      class="disclosure__button localization-form__select localization-selector link link--text link-with-icon"
+                      aria-expanded="false"
+                      aria-controls="FooterCountryList"
+                      aria-describedby="FooterCountryLabel"
+                    >
+                      {%- unless section.settings.enable_language_selector
+                        and localization.available_languages.size > 1
+                      -%}
                         {% render 'icon', icon: 'localization' %}
                       {%- endunless -%}
-                      <span class="label">{{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})</span>
+                      <span class="label">
+                        {{- localization.country.name }} ({{ localization.country.currency.iso_code }}
+                        {{ localization.country.currency.symbol }})</span
+                      >
                       {% render 'icon', icon: 'caret' %}
                     </button>
                     <ul id="FooterCountryList" role="list" class="disclosure__list list-unstyled" hidden>
                       <li class="disclosure__item" tabindex="-1">
-                        <a class="disclosure__link link disclosure__link--active focus-inset" href="#" aria-current="true" data-value="{{ localization.country.iso_code }}">
-                          {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
+                        <a
+                          class="disclosure__link link disclosure__link--active focus-inset"
+                          href="#"
+                          aria-current="true"
+                          data-value="{{ localization.country.iso_code }}"
+                        >
+                          {{ localization.country.name }} ({{ localization.country.currency.iso_code }}
+                          {{ localization.country.currency.symbol }})
                         </a>
                       </li>
                       {%- for country in localization.available_countries -%}
                         {%- if country.iso_code != localization.country.iso_code -%}
                           <li class="disclosure__item" tabindex="-1">
                             <a class="disclosure__link link focus-inset" href="#" data-value="{{ country.iso_code }}">
-                              {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+                              {{ country.name }} ({{ country.currency.iso_code }}
+                              {{ country.currency.symbol }})
                             </a>
                           </li>
                         {%- endif -%}
                       {%- endfor -%}
                     </ul>
                   </div>
-                  <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}"/>
+                  <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
                 </div>
               {%- endform -%}
             </localization-form>
@@ -349,12 +436,12 @@
         button: this.querySelector('button'),
         panel: this.querySelector('ul'),
       };
-      
+
       this.elements.button.addEventListener('click', this.openSelector.bind(this));
       this.elements.button.addEventListener('focusout', this.closeSelector.bind(this));
       this.addEventListener('keyup', this.onContainerKeyUp.bind(this));
 
-      this.querySelectorAll('a').forEach(item => item.addEventListener('click', this.onItemClick.bind(this)));
+      this.querySelectorAll('a').forEach((item) => item.addEventListener('click', this.onItemClick.bind(this)));
     }
 
     hidePanel() {
@@ -383,7 +470,10 @@
     openSelector() {
       // this.elements.button.focus();
       this.elements.panel.toggleAttribute('hidden');
-      this.elements.button.setAttribute('aria-expanded', (this.elements.button.getAttribute('aria-expanded') === 'false').toString());
+      this.elements.button.setAttribute(
+        'aria-expanded',
+        (this.elements.button.getAttribute('aria-expanded') === 'false').toString()
+      );
 
       if (this.classList.contains('on-header')) {
         document.body.classList.toggle('localization--open');
