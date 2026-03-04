@@ -23,7 +23,7 @@
   %}
 {% endcomment %}
 
-{%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: media_width | round }}px, (min-width: 990px) calc({{ media_width | times: 100 }}vw - 10rem), (min-width: 750px) calc((100vw - 10rem) / 2), calc(100vw - 3rem){%- endcapture -%}
+{%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: media_width | round }}px, (min-width: 750px) calc((50vw - 10rem) / 2), calc(100vw - 3rem){%- endcapture -%}
 {%- liquid
   assign image_loading = 'eager'
   if lazy_load
@@ -33,76 +33,103 @@
   assign alt = media.alt | escape | split: '#' | first
   assign alt = alt | default: shop.name
   if alt == ''
-   assign alt = shop.name
+    assign alt = shop.name
   endif
-   
-  assign widths = '165, 360, 535, 750, 1100, 1500'
+
+  assign widths = '535, 400, 700, 1000'
 -%}
 
 <noscript>
   {%- if media.media_type == 'video' or media.media_type == 'external_video' -%}
-    <a href="{% if media.media_type == 'video' %}{{ media.sources[1].url }}{% else %}{{ media | external_video_url }}{% endif %}" aria-label="{{ 'products.product.video_exit_message' | t: title: product.title | escape }}">
+    <a
+      href="{% if media.media_type == 'video' %}{{ media.sources[1].url }}{% else %}{{ media | external_video_url }}{% endif %}"
+      aria-label="{{ 'products.product.video_exit_message' | t: title: product.title | escape }}"
+    >
       {%- if zoom -%}
         <span class="product__media-icon motion-reduce">
           {% render 'icon', icon: 'play' %}
         </span>
       {%- endif -%}
       <div class="media-wrapper">
-        <div class="product__media media media--{{ image_ratio }}{% if mobile_image_ratio %} media-mobile--{{ mobile_image_ratio }}{% endif %}"
-          {%- if image_ratio == 'adapt' or mobile_image_ratio == 'adapt' %} style="--image-ratio-percent: {{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;"{% endif -%}
+        <div
+          class="product__media media media--{{ image_ratio }}{% if mobile_image_ratio %} media-mobile--{{ mobile_image_ratio }}{% endif %}"
+          {%- if image_ratio == 'adapt' or mobile_image_ratio == 'adapt' %}
+            style="--image-ratio-percent: {{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;"
+          {% endif -%}
         >
-          {{ media.preview_image | image_url: width: 1500 | image_tag:
-            loading: image_loading,
-            sizes: sizes,
-            widths: widths,
-            alt: alt
+          {{
+            media.preview_image
+            | image_url: width: 1500
+            | image_tag: loading: image_loading, sizes: sizes, widths: widths, alt: alt
           }}
         </div>
       </div>
     </a>
   {%- else -%}
     <div class="media-wrapper">
-      <div class="product__media media media--{{ image_ratio }}{% if mobile_image_ratio %} media-mobile--{{ mobile_image_ratio }}{% endif %}"
-        {%- if image_ratio == 'adapt' or mobile_image_ratio == 'adapt' %} style="--image-ratio-percent: {{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;"{% endif -%}
+      <div
+        class="product__media media media--{{ image_ratio }}{% if mobile_image_ratio %} media-mobile--{{ mobile_image_ratio }}{% endif %}"
+        {%- if image_ratio == 'adapt' or mobile_image_ratio == 'adapt' %}
+          style="--image-ratio-percent: {{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;"
+        {% endif -%}
       >
-        {{ media.preview_image | image_url: width: 1500 | image_tag:
-          loading: image_loading,
-          sizes: sizes,
-          widths: widths,
-          alt: alt,
-          is: 'lazy-image'
+        {{
+          media.preview_image
+          | image_url: width: 1500
+          | image_tag: loading: image_loading, sizes: sizes, widths: widths, alt: alt, is: 'lazy-image'
         }}
       </div>
     </div>
   {%- endif -%}
 </noscript>
 
-<modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" data-modal="#ProductModal-{{ modal_id }}">
+<modal-opener
+  class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden"
+  data-modal="#ProductModal-{{ modal_id }}"
+>
   {%- if zoom -%}
     <span class="product__media-icon motion-reduce" aria-hidden="true">
       {%- liquid
         case media.media_type
-        when 'video' or 'external_video'
-          render 'icon', icon: 'play'
-        when 'model'
-          render 'icon', icon: '3d-model'
-        else
-          render 'icon', icon: 'zoom'
+          when 'video', 'external_video'
+            render 'icon', icon: 'play'
+          when 'model'
+            render 'icon', icon: '3d-model'
+          else
+            render 'icon', icon: 'zoom'
         endcase
       -%}
     </span>
   {%- endif -%}
 
-  <use-animate data-animate="{% if position == 'featured' %}zoom-fade-small{% else %}fade-up{% endif %}" class="media-wrapper">
-    <div class="product__media image-animate media media--{{ image_ratio }}{% if mobile_image_ratio %} media-mobile--{{ mobile_image_ratio }}{% endif %}"
-      {%- if image_ratio == 'adapt' or mobile_image_ratio == 'adapt' %} style="--image-ratio-percent: {{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;"{% endif -%}
+  <use-animate
+    data-animate="{% if position == 'featured' %}zoom-fade-small{% else %}fade-up{% endif %}"
+    class="media-wrapper"
+  >
+    <div
+      class="product__media image-animate media media--{{ image_ratio }}{% if mobile_image_ratio %} media-mobile--{{ mobile_image_ratio }}{% endif %}"
+      {%- if image_ratio == 'adapt' or mobile_image_ratio == 'adapt' %}
+        style="--image-ratio-percent: {{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;"
+      {% endif -%}
     >
-      {{ media.preview_image | image_url: width: 1500 | image_tag:
-        loading: image_loading,
-        sizes: sizes,
-        widths: widths,
-        alt: alt,
-        is: 'lazy-image'
+      {% liquid
+        if position == 'featured'
+          assign fetchpriority = 'high'
+        else
+          assign fetchpriority = 'low'
+        endif
+      %}
+
+      {{
+        media.preview_image
+        | image_url: width: 1500
+        | image_tag:
+          loading: image_loading,
+          sizes: sizes,
+          widths: widths,
+          alt: alt,
+          is: 'lazy-image',
+          fetchpriority: fetchpriority
       }}
     </div>
   </use-animate>
@@ -122,22 +149,26 @@
 {%- if media.media_type != 'image' -%}
   <div class="media-wrapper">
     {%- if media.media_type == 'model' -%}
-      <product-model class="deferred-media media media--{{ image_ratio }}{% if mobile_image_ratio %} media-mobile--{{ mobile_image_ratio }}{% endif %} no-js-hidden"
+      <product-model
+        class="deferred-media media media--{{ image_ratio }}{% if mobile_image_ratio %} media-mobile--{{ mobile_image_ratio }}{% endif %} no-js-hidden"
         data-media-id="{{ media.id }}"
-        {%- if image_ratio == 'adapt' or mobile_image_ratio == 'adapt' %} style="--image-ratio-percent: 100%;"{% endif -%}
+        {%- if image_ratio == 'adapt' or mobile_image_ratio == 'adapt' %}
+          style="--image-ratio-percent: 100%;"
+        {% endif -%}
       >
     {%- else -%}
-      <deferred-media class="deferred-media media media--{{ image_ratio }}{% if mobile_image_ratio %} media-mobile--{{ mobile_image_ratio }}{% endif %} no-js-hidden"
+      <deferred-media
+        class="deferred-media media media--{{ image_ratio }}{% if mobile_image_ratio %} media-mobile--{{ mobile_image_ratio }}{% endif %} no-js-hidden"
         data-media-id="{{ media.id }}"
-        {%- if image_ratio == 'adapt' or mobile_image_ratio == 'adapt' %} style="--image-ratio-percent: {{ 1 | divided_by: media.aspect_ratio | times: 100 }}%;"{% endif -%}
+        {%- if image_ratio == 'adapt' or mobile_image_ratio == 'adapt' %}
+          style="--image-ratio-percent: {{ 1 | divided_by: media.aspect_ratio | times: 100 }}%;"
+        {% endif -%}
       >
     {%- endif -%}
-    {{ media.preview_image | image_url: width: 1500 | image_tag:
-      loading: image_loading,
-      class: 'deferred-media__poster',
-      sizes: sizes,
-      widths: widths,
-      alt: alt
+    {{
+      media.preview_image
+      | image_url: width: 1500
+      | image_tag: loading: image_loading, class: 'deferred-media__poster', sizes: sizes, widths: widths, alt: alt
     }}
     <button id="Deferred-Poster-{{ media.id }}" class="deferred-media__poster" type="button">
       <span class="deferred-media__poster-button motion-reduce">
@@ -153,17 +184,17 @@
     <template>
       {%- liquid
         case media.media_type
-        when 'external_video'
-          assign video_class = 'js-' | append: media.host
-          if media.host == 'youtube'
-            echo media | external_video_url: autoplay: true, loop: loop, playlist: media.external_id | external_video_tag: class: video_class, loading: "lazy"
-          else
-            echo media | external_video_url: autoplay: true, loop: loop | external_video_tag: class: video_class, loading: "lazy"
-          endif
-        when 'video'
-          echo media | media_tag: image_size: "2048x", autoplay: true, loop: loop, controls: true, controlsList: "nodownload", preload: "none"
-        when 'model'
-          echo media | media_tag: image_size: "2048x", toggleable: true
+          when 'external_video'
+            assign video_class = 'js-' | append: media.host
+            if media.host == 'youtube'
+              echo media | external_video_url: autoplay: true, loop: loop, playlist: media.external_id | external_video_tag: class: video_class, loading: 'lazy'
+            else
+              echo media | external_video_url: autoplay: true, loop: loop | external_video_tag: class: video_class, loading: 'lazy'
+            endif
+          when 'video'
+            echo media | media_tag: image_size: '2048x', autoplay: true, loop: loop, controls: true, controlsList: 'nodownload', preload: 'none'
+          when 'model'
+            echo media | media_tag: image_size: '2048x', toggleable: true
         endcase
       -%}
     </template>
