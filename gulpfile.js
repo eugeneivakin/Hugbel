@@ -10,7 +10,7 @@ const wait = require("gulp-wait");
 
 function compilescss() {
   return (
-    src("src/scss/**/*.scss")
+    src(["src/scss/**/*.scss", "!src/scss/default-styles/*.scss"])
       .pipe(sass())
       .pipe(prefix())
       .pipe(minify())
