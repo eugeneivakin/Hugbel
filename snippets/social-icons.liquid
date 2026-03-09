@@ -88,6 +88,24 @@
   </li>
 {%- endif -%}
 
+{%- if settings.social_whatsapp_link != blank -%}
+  <li class="list-social__item">
+    <a target="_blank" rel="noopener" href="{{ settings.social_vimeo_link }}" class="list-social__link link link--text link-with-icon" aria-describedby="a11y-external-message">
+      {% render 'icon-brand', icon: 'whatsapp' %}
+      <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+    </a>
+  </li>
+{%- endif -%}
+
+{%- if settings.social_email_link != blank -%}
+  <li class="list-social__item">
+    <a target="_blank" rel="noopener" href="{{ settings.social_vimeo_link }}" class="list-social__link link link--text link-with-icon" aria-describedby="a11y-external-message">
+      {% render 'icon-brand', icon: 'envelope' %}
+      <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+    </a>
+  </li>
+{%- endif -%}
+
 {%- if show_rss -%}
   <li class="list-social__item">
     <a target="_blank" rel="noopener" href="{{ request.origin }}{{ blog.url }}.atom" aria-describedby="a11y-external-message">
@@ -96,3 +114,5 @@
     </a>
   </li>
 {%- endif -%}
+
+
