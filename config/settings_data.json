@@ -479,7 +479,7 @@
         ],
         "settings": {
           "use_custom_colors": true,
-          "colors_text": "#ffffff",
+          "colors_text": "#000000",
           "colors_background": "#ffffff",
           "gradient_background": "",
           "padding_top": 12,
