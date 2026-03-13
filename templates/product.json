@@ -35,6 +35,18 @@
             "price_size": "large"
           }
         },
+        "custom_liquid_7XNFYH": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<a href=\"https://hugbel.com/pages/reviews\" style=\"text-decoration: none;\">\n  <div style=\"\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    margin-top: 8px;\n    font-size: 15px;\n    color: #444;\n    cursor: pointer;\n  \">\n    <span style=\"color: #f5a623; font-size: 16px;\">★★★★★</span>\n    <span>Rated <strong>4.8</strong> / 5</span>\n  </div>\n</a>"
+          }
+        },
+        "custom_liquid_8JBNqg": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.available %}\n  <div class=\"hugbel-stock-inline\" role=\"status\" aria-live=\"polite\">\n    <span class=\"hugbel-dot\" aria-hidden=\"true\"></span>\n    <span class=\"hugbel-text\">\n      <strong>In stock</strong> \n    </span>\n  </div>\n\n  <style>\n    .hugbel-stock-inline{\n      display:flex;\n      align-items:flex-start;\n      gap:10px;\n      margin:12px 0;\n      font-size:14px;\n      line-height:1.35;\n    }\n    .hugbel-dot{\n      width:10px;\n      height:10px;\n      border-radius:50%;\n      background:#1db954;\n      box-shadow:0 0 0 3px rgba(29,185,84,.15);\n      margin-top:4px;\n      flex:0 0 auto;\n    }\n    .hugbel-text{\n      color:rgba(0,0,0,.78);\n    }\n    .hugbel-date{\n      font-weight:700;\n      padding:1px 6px;\n      border-radius:999px;\n      background:rgba(0,0,0,.06);\n      white-space:nowrap;\n    }\n  </style>\n{% endif %}"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -59,20 +71,14 @@
             "show_dynamic_checkout": false
           }
         },
-        "custom_liquid_dCUFUd": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div style=\"text-align: center; margin-top: 16px; margin-bottom: 4px;\">\n  <img \n    src=\"https://cdn.shopify.com/s/files/1/0843/0000/5708/files/Transparent_img.png?v=1751877750\" \n    alt=\"Secure checkout badges\" \n    style=\"max-width: 300px; width: 100%; height: auto;\"\n  >\n</div>\n\n<style>\n  .hugbel-trust-line {\n    font-size: 13px;\n    color: #444;\n    letter-spacing: 0.2px;\n    display: flex;\n    justify-content: center;\n    gap: 24px;\n    align-items: center;\n    margin-top: 8px;\n    margin-bottom: 24px;\n    text-align: center;\n    flex-wrap: wrap;\n  }\n\n  .hugbel-trust-line span {\n    display: flex;\n    align-items: center;\n    gap: 6px;\n    white-space: nowrap;\n  }\n\n  @media (max-width: 767px) {\n    .hugbel-trust-line {\n      font-size: 12px;\n      gap: 12px;\n      margin-top: 6px;\n      margin-bottom: 18px;\n    }\n  }\n</style>\n\n<div class=\"hugbel-trust-line\">\n  <span>🚚 Free Shipping</span>\n  <span>🔁 30-Day Trial</span>\n  <span>🛡️ 2-Year Warranty</span>\n</div>"
-          }
-        },
         "judge_me_reviews_review_snippet_widget_ktzYUf": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
-        "custom_liquid_8JBNqg": {
+        "custom_liquid_dCUFUd": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.available %}\n  <div class=\"hugbel-stock-inline\" role=\"status\" aria-live=\"polite\">\n    <span class=\"hugbel-dot\" aria-hidden=\"true\"></span>\n    <span class=\"hugbel-text\">\n      <strong>In stock</strong> \n    </span>\n  </div>\n\n  <style>\n    .hugbel-stock-inline{\n      display:flex;\n      align-items:flex-start;\n      gap:10px;\n      margin:12px 0;\n      font-size:14px;\n      line-height:1.35;\n    }\n    .hugbel-dot{\n      width:10px;\n      height:10px;\n      border-radius:50%;\n      background:#1db954;\n      box-shadow:0 0 0 3px rgba(29,185,84,.15);\n      margin-top:4px;\n      flex:0 0 auto;\n    }\n    .hugbel-text{\n      color:rgba(0,0,0,.78);\n    }\n    .hugbel-date{\n      font-weight:700;\n      padding:1px 6px;\n      border-radius:999px;\n      background:rgba(0,0,0,.06);\n      white-space:nowrap;\n    }\n  </style>\n{% endif %}"
+            "custom_liquid": "<div style=\"text-align: center; margin-top: 16px; margin-bottom: 4px;\">\n  <img \n    src=\"https://cdn.shopify.com/s/files/1/0843/0000/5708/files/Transparent_img.png?v=1751877750\" \n    alt=\"Secure checkout badges\" \n    style=\"max-width: 300px; width: 100%; height: auto;\"\n  >\n</div>\n\n<style>\n  .hugbel-trust-line {\n    font-size: 13px;\n    color: #444;\n    letter-spacing: 0.2px;\n    display: flex;\n    justify-content: center;\n    gap: 24px;\n    align-items: center;\n    margin-top: 8px;\n    margin-bottom: 24px;\n    text-align: center;\n    flex-wrap: wrap;\n  }\n\n  .hugbel-trust-line span {\n    display: flex;\n    align-items: center;\n    gap: 6px;\n    white-space: nowrap;\n  }\n\n  @media (max-width: 767px) {\n    .hugbel-trust-line {\n      font-size: 12px;\n      gap: 12px;\n      margin-top: 6px;\n      margin-bottom: 18px;\n    }\n  }\n</style>\n\n<div class=\"hugbel-trust-line\">\n  <span>🚚 Free Shipping</span>\n  <span>🔁 30-Day Trial</span>\n  <span>🛡️ 2-Year Warranty</span>\n</div>"
           }
         },
         "spacing_wAEGCG": {
@@ -113,12 +119,6 @@
             "icon": "ruler",
             "text": "Certified for safety",
             "text_style": "body"
-          }
-        },
-        "custom_liquid_7XNFYH": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<a href=\"https://hugbel.com/pages/reviews\" style=\"text-decoration: none;\">\n  <div style=\"\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    margin-top: 8px;\n    font-size: 15px;\n    color: #444;\n    cursor: pointer;\n  \">\n    <span style=\"color: #f5a623; font-size: 16px;\">★★★★★</span>\n    <span>Rated <strong>4.8</strong> / 5</span>\n  </div>\n</a>"
           }
         },
         "custom_liquid_M3nzfp": {
@@ -220,18 +220,18 @@
       "block_order": [
         "breadcrumb_JLj3X9",
         "title",
+        "custom_liquid_7XNFYH",
+        "custom_liquid_8JBNqg",
         "price",
         "variant_picker",
         "buy_buttons",
-        "custom_liquid_dCUFUd",
         "judge_me_reviews_review_snippet_widget_ktzYUf",
-        "custom_liquid_8JBNqg",
+        "custom_liquid_dCUFUd",
         "spacing_wAEGCG",
         "text_D6dhfF",
         "text_frmDPB",
         "text_6fiX6W",
         "text_cfU4JU",
-        "custom_liquid_7XNFYH",
         "custom_liquid_M3nzfp",
         "custom_liquid_k874Pm",
         "inventory_status",
