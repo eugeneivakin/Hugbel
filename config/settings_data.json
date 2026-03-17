@@ -2640,7 +2640,7 @@
       ".mega-menu__item {margin-bottom: -15px !important;}",
       ".mega-menu__item:last-child {margin-bottom: 0 !important;}",
       "button[name=\"checkout\"] {background-color: green;}",
-      ".product-form__submit.button.button--secondary.button--full-width {background-color: green; color: white;}",
+      ".product-form__submit.button.button--secondary.button--full-width {--font-button-size: 14px; background-color: green; color: white;}",
       ".kqsiVA9Jf8LJAbxw8Bau .Xrk_DudB6JJ3t2Kh2_cU,.kqsiVA9Jf8LJAbxw8Bau .ElVMgDjOgshGFMIvg3se {font-size: 10px important;}"
     ]
   }
