@@ -2288,6 +2288,7 @@ class AnimateSticky extends HTMLElement {
   }
 
   connectedCallback() {
+    this.targetElement = this.getTargetElement();
     this.onScrollHandler = this.onScroll.bind(this);
 
     window.addEventListener('scroll', this.onScrollHandler, false);
@@ -2299,13 +2300,29 @@ class AnimateSticky extends HTMLElement {
   }
 
   onScroll() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (!this.targetElement || !document.body.contains(this.targetElement)) {
+      this.targetElement = this.getTargetElement();
+    }
 
-    if (scrollTop > this.getOffsetTop(this)) {
+    if (this.shouldReveal()) {
       window.requestAnimationFrame(this.reveal.bind(this));
     } else {
       window.requestAnimationFrame(this.reset.bind(this));
     }
+  }
+
+  shouldReveal() {
+    if (this.targetElement) {
+      return this.targetElement.getBoundingClientRect().bottom <= 0;
+    }
+
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return scrollTop > this.getOffsetTop(this);
+  }
+
+  getTargetElement() {
+    const buttons = document.querySelectorAll('button.product-form__submit');
+    return Array.from(buttons).find((button) => !this.contains(button)) || null;
   }
 
   reveal() {
