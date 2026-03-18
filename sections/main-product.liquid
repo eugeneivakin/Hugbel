@@ -1022,6 +1022,7 @@
   {%- assign sticky_cart = section.blocks | where: "type", "sticky_cart" | first -%}
   {%- if sticky_cart -%}
     <link rel="stylesheet" href="{{ 'component-product-sticky-cart.css' | asset_url }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ 'x-component-product-sticky-cart.css' | asset_url }}" media="print" onload="this.media='all'">
     <animate-sticky class="sticky-cart-wrapper hidden">
       <span class="sticky-cart-block" {{ sticky_cart.shopify_attributes }}></span>
       <div class="product-sticky-cart" id="sticky-cart-{{ section.id }}">
@@ -1047,7 +1048,7 @@
               {%- endif -%}
             </div>
             <div class="sticky-cart__content-heading">
-              <p class="h4 small-hide medium-hide">{{ product.title | escape }}</p>
+              <p class="h2 small-hide medium-hide">{{ product.title | escape }}</p>
               <div class="no-js-hidden" id="price-{{ section.id }}--alt">
                 {%- render 'price', product: product, use_variant: true, show_badges: true -%}
               </div>
@@ -1083,7 +1084,7 @@
                         data-option-index="option{{ option_idx }}"
                         data-option-slug="{{ option.name | handleize }}"
                       >
-                        <select-wrapper class="select button--small">
+                        <select-wrapper class="select">
                           <select class="select__select"
                             name="{{ option.name | escape }}"
                             form="{{ sticky_cart_form_id }}"
@@ -1109,7 +1110,7 @@
                 <button
                   type="submit"
                   name="add"
-                  class="product-form__submit button button--small"
+                  class="product-form__submit button"
                   {%- if product.selected_or_first_available_variant.available == false %} disabled="disabled"{% endif -%}
                   {%- if product.template_suffix == 'pre-order' %} data-pre-order="true"{% endif -%}
                 >

@@ -1,0 +1,31 @@
+@use "mixins/media" as *;
+
+.sticky-cart-wrapper {
+  .sticky-cart__content {
+    .h1,
+    .h2,
+    .h3 {
+      margin: 0;
+    }
+  }
+  .price bdi,
+  .price--on-sale .price-item--regular bdi {
+    font-size: calc(var(--font-price-scale) * 2.2rem);
+  }
+
+  .select__select {
+    font-size: 1.4rem;
+
+    @include sm {
+      font-size: 1.6rem;
+    }
+  }
+
+  .button {
+    --font-button-size: 1.4rem;
+
+    @include sm {
+      --font-button-size: 1.6rem;
+    }
+  }
+}
