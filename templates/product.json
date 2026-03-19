@@ -54,6 +54,38 @@
             "show_badges": true
           }
         },
+        "text_D6dhfF": {
+          "type": "text",
+          "settings": {
+            "icon": "box",
+            "text": "30 day return policy",
+            "text_style": "body"
+          }
+        },
+        "text_frmDPB": {
+          "type": "text",
+          "settings": {
+            "icon": "star",
+            "text": "2 years warranty",
+            "text_style": "body"
+          }
+        },
+        "text_6fiX6W": {
+          "type": "text",
+          "settings": {
+            "icon": "truck",
+            "text": "Free shipping",
+            "text_style": "body"
+          }
+        },
+        "text_cfU4JU": {
+          "type": "text",
+          "settings": {
+            "icon": "ruler",
+            "text": "Certified for safety",
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -87,38 +119,6 @@
           "settings": {
             "desktop_height": 28,
             "mobile_height": 20
-          }
-        },
-        "text_D6dhfF": {
-          "type": "text",
-          "settings": {
-            "icon": "box",
-            "text": "30 day return policy",
-            "text_style": "body"
-          }
-        },
-        "text_frmDPB": {
-          "type": "text",
-          "settings": {
-            "icon": "star",
-            "text": "2 years warranty",
-            "text_style": "body"
-          }
-        },
-        "text_6fiX6W": {
-          "type": "text",
-          "settings": {
-            "icon": "truck",
-            "text": "Free shipping",
-            "text_style": "body"
-          }
-        },
-        "text_cfU4JU": {
-          "type": "text",
-          "settings": {
-            "icon": "ruler",
-            "text": "Certified for safety",
-            "text_style": "body"
           }
         },
         "custom_liquid_M3nzfp": {
@@ -223,15 +223,15 @@
         "custom_liquid_7XNFYH",
         "custom_liquid_8JBNqg",
         "price",
+        "text_D6dhfF",
+        "text_frmDPB",
+        "text_6fiX6W",
+        "text_cfU4JU",
         "variant_picker",
         "buy_buttons",
         "judge_me_reviews_review_snippet_widget_ktzYUf",
         "custom_liquid_dCUFUd",
         "spacing_wAEGCG",
-        "text_D6dhfF",
-        "text_frmDPB",
-        "text_6fiX6W",
-        "text_cfU4JU",
         "custom_liquid_M3nzfp",
         "custom_liquid_k874Pm",
         "inventory_status",
