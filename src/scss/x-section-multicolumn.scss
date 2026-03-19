@@ -1,0 +1,35 @@
+@use "mixins/media" as *;
+
+.section--multicolumn {
+  --iconWeight: 3px;
+  --iconLinecaps: round;
+
+  .multicolumn-card {
+    row-gap: 1rem;
+  }
+
+  .multicolumn-card__info > :nth-child(2) {
+    margin-top: 0.5rem;
+  }
+
+  .media--icon {
+    fill: none;
+    stroke-width: var(--iconWeight);
+    stroke: currentColor;
+    stroke-linecap: var(--iconLinecaps);
+    stroke-linejoin: var(--iconLinecaps);
+  }
+
+  .multicolumn-card__info {
+    h2,
+    .h2 {
+      @include sm {
+        font-size: calc(var(--font-heading-scale) * 2.4rem);
+      }
+    }
+  }
+
+  .typeset {
+    font-size: 1.4rem;
+  }
+}
