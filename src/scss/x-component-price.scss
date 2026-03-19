@@ -1,0 +1,7 @@
+@use "mixins/media" as *;
+
+.price .price__badge-sale {
+  --color-badge-border: var(--color-sale-price);
+  --color-badge-background: var(--color-sale-price);
+  --color-badge-foreground: rgb(var(--color-base-background));
+}
