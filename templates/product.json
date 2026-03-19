@@ -293,7 +293,7 @@
         "column_4Dw9mb": {
           "type": "column",
           "settings": {
-            "icon": "chat_bubble",
+            "icon": "mail",
             "title": "Safety Certification",
             "title_size": "h2",
             "text": "<p>Compliant with North America, Australia, Europe Certification.</p>",
@@ -305,7 +305,7 @@
         "column_YfCRRr": {
           "type": "column",
           "settings": {
-            "icon": "box",
+            "icon": "package",
             "title": "Return Policy",
             "title_size": "h2",
             "text": "<p>A 60-day return policy is available for all purchases.</p>",
@@ -317,7 +317,7 @@
         "column_qrXqee": {
           "type": "column",
           "settings": {
-            "icon": "return",
+            "icon": "shield",
             "title": "Ship Insurance",
             "title_size": "h2",
             "text": "<p>Lost or damaged packages receive a full refund or replacement.</p>",
