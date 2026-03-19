@@ -167,7 +167,7 @@
             style="--image-ratio-percent: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"
           {% endif -%}
         >
-          {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 10rem) / 4), (min-width: 750px) calc((50vw - 10rem) / 3), calc(50vw - 3rem){%- endcapture -%}
+          {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 10rem) / 4), (min-width: 750px) calc((100vw - 10rem) / 3), calc(50vw - 3rem){%- endcapture -%}
           {%- liquid
             assign image_loading = 'eager'
             if lazy_load

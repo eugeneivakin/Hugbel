@@ -151,16 +151,8 @@
             }
           }
         },
-        "block_order": [
-          "announcement_BkLYzx",
-          "announcement_V4nAda",
-          "announcement_AXgDQQ",
-          "announcement_XKw8VU",
-          "announcement_effWew"
-        ],
-        "custom_css": [
-          "span {font-weight: bold;}"
-        ],
+        "block_order": ["announcement_BkLYzx", "announcement_V4nAda", "announcement_AXgDQQ", "announcement_XKw8VU", "announcement_effWew"],
+        "custom_css": ["span {font-weight: bold;}"],
         "settings": {
           "only_homepage": false,
           "layout": "carousel",
@@ -183,50 +175,25 @@
           "mega_menu_XyffdP": {
             "type": "mega_menu",
             "settings": {
-              "menu_title": "SHOP ALL",
-              "narrow": true,
+              "menu_title": "all collections",
+              "narrow": false,
               "show_menu_image": true,
-              "promo_image_1": "shopify://shop_images/mainimage0Creativiteit-Vogel-Ontwerp-Gold-Plating-Led-Wandlampen-Gang-Trappen-Blaker-Lamp-Woonkamer-Slaapkamer-Decor-Verlichtingsarmaturen_720x_f7578bcf-81cc-4b91-97d6-d87bb769f016.webp",
               "promo_image_ratio_1": "portrait",
               "promo_image_position_1": "center center",
-              "promo_heading_1": "Shop lamps",
+              "promo_heading_1": "",
               "promo_text_1": "",
               "promo_overlay_content_1": true,
-              "promo_link_1": "shopify://collections/all-lamps",
-              "promo_image_2": "shopify://shop_images/main-image-5_ea06e66f-6536-462a-9ec1-c64d08b4168e.jpg",
+              "promo_link_1": "",
               "promo_image_ratio_2": "portrait",
               "promo_image_position_2": "center center",
-              "promo_heading_2": "Home Decor",
+              "promo_heading_2": "",
               "promo_text_2": "",
               "promo_overlay_content_2": true,
-              "promo_link_2": "shopify://collections/home-decore"
-            }
-          },
-          "mega_menu_RKHckY": {
-            "type": "mega_menu",
-            "settings": {
-              "menu_title": "SHOP",
-              "narrow": true,
-              "show_menu_image": true,
-              "promo_image_ratio_1": "adapt",
-              "promo_image_position_1": "center center",
-              "promo_heading_1": "Golden Sphere Side Table",
-              "promo_text_1": "",
-              "promo_overlay_content_1": false,
-              "promo_link_1": "",
-              "promo_image_ratio_2": "adapt",
-              "promo_image_position_2": "center center",
-              "promo_heading_2": "Java Coffee Table",
-              "promo_text_2": "",
-              "promo_overlay_content_2": false,
               "promo_link_2": ""
             }
           }
         },
-        "block_order": [
-          "mega_menu_XyffdP",
-          "mega_menu_RKHckY"
-        ],
+        "block_order": ["mega_menu_XyffdP"],
         "settings": {
           "logo": "shopify://shop_images/ngfn.png",
           "logo_height": 110,
@@ -287,12 +254,7 @@
             }
           }
         },
-        "block_order": [
-          "text_YXWLg4",
-          "text_kLNnGB",
-          "link_list_QUKHfk",
-          "link_list_Ei6cWf"
-        ],
+        "block_order": ["text_YXWLg4", "text_kLNnGB", "link_list_QUKHfk", "link_list_Ei6cWf"],
         "settings": {
           "show_divider": true,
           "newsletter_enable": true,
@@ -358,13 +320,7 @@
             }
           }
         },
-        "block_order": [
-          "popup-0",
-          "popup-1",
-          "popup-2",
-          "popup-3",
-          "popup-4"
-        ],
+        "block_order": ["popup-0", "popup-1", "popup-2", "popup-3", "popup-4"],
         "settings": {
           "mode": "disabled",
           "only_homepage": true,
@@ -404,10 +360,7 @@
             }
           }
         },
-        "block_order": [
-          "cookie-banner-0",
-          "cookie-banner-1"
-        ],
+        "block_order": ["cookie-banner-0", "cookie-banner-1"],
         "settings": {
           "mode": "disabled",
           "delay": 5,
@@ -469,14 +422,7 @@
             }
           }
         },
-        "block_order": [
-          "mobile-dock-0",
-          "mobile-dock-1",
-          "mobile-dock-2",
-          "mobile-dock-3",
-          "mobile-dock-4",
-          "mobile-dock-5"
-        ],
+        "block_order": ["mobile-dock-0", "mobile-dock-1", "mobile-dock-2", "mobile-dock-3", "mobile-dock-4", "mobile-dock-5"],
         "settings": {
           "use_custom_colors": true,
           "colors_text": "#000000",
@@ -514,11 +460,7 @@
             }
           }
         },
-        "block_order": [
-          "age-verifier-0",
-          "age-verifier-1",
-          "age-verifier-2"
-        ],
+        "block_order": ["age-verifier-0", "age-verifier-1", "age-verifier-2"],
         "settings": {
           "mode": "disabled",
           "expiry": 30,
@@ -748,9 +690,7 @@
               }
             }
           },
-          "block_order": [
-            "announcement-bar-0"
-          ],
+          "block_order": ["announcement-bar-0"],
           "settings": {
             "only_homepage": true,
             "autorotate": true,
@@ -802,11 +742,7 @@
               }
             }
           },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
+          "block_order": ["footer-0", "footer-1", "footer-2"],
           "settings": {
             "newsletter_enable": true,
             "newsletter_heading": "Exclusive benefits",
@@ -863,13 +799,7 @@
               }
             }
           },
-          "block_order": [
-            "popup-0",
-            "popup-1",
-            "popup-2",
-            "popup-3",
-            "popup-4"
-          ],
+          "block_order": ["popup-0", "popup-1", "popup-2", "popup-3", "popup-4"],
           "settings": {
             "mode": "enabled",
             "only_homepage": true,
@@ -909,10 +839,7 @@
               }
             }
           },
-          "block_order": [
-            "cookie-banner-0",
-            "cookie-banner-1"
-          ],
+          "block_order": ["cookie-banner-0", "cookie-banner-1"],
           "settings": {
             "mode": "disabled",
             "delay": 5,
@@ -973,14 +900,7 @@
               }
             }
           },
-          "block_order": [
-            "mobile-dock-0",
-            "mobile-dock-1",
-            "mobile-dock-2",
-            "mobile-dock-3",
-            "mobile-dock-4",
-            "mobile-dock-5"
-          ],
+          "block_order": ["mobile-dock-0", "mobile-dock-1", "mobile-dock-2", "mobile-dock-3", "mobile-dock-4", "mobile-dock-5"],
           "settings": {
             "use_custom_colors": false,
             "colors_text": "#1a1b18",
@@ -1017,11 +937,7 @@
               }
             }
           },
-          "block_order": [
-            "age-verifier-0",
-            "age-verifier-1",
-            "age-verifier-2"
-          ],
+          "block_order": ["age-verifier-0", "age-verifier-1", "age-verifier-2"],
           "settings": {
             "mode": "disabled",
             "expiry": 30,
@@ -1152,12 +1068,7 @@
               }
             }
           },
-          "block_order": [
-            "announcement-bar-0",
-            "announcement-bar-1",
-            "announcement-bar-2",
-            "announcement-bar-3"
-          ],
+          "block_order": ["announcement-bar-0", "announcement-bar-1", "announcement-bar-2", "announcement-bar-3"],
           "settings": {
             "only_homepage": true,
             "autorotate": false,
@@ -1221,12 +1132,7 @@
               }
             }
           },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2",
-            "footer-3"
-          ],
+          "block_order": ["footer-0", "footer-1", "footer-2", "footer-3"],
           "settings": {
             "newsletter_enable": true,
             "newsletter_heading": "Exclusive benefits",
@@ -1283,13 +1189,7 @@
               }
             }
           },
-          "block_order": [
-            "popup-0",
-            "popup-1",
-            "popup-2",
-            "popup-3",
-            "popup-4"
-          ],
+          "block_order": ["popup-0", "popup-1", "popup-2", "popup-3", "popup-4"],
           "settings": {
             "mode": "enabled",
             "only_homepage": true,
@@ -1329,10 +1229,7 @@
               }
             }
           },
-          "block_order": [
-            "cookie-banner-0",
-            "cookie-banner-1"
-          ],
+          "block_order": ["cookie-banner-0", "cookie-banner-1"],
           "settings": {
             "mode": "disabled",
             "delay": 5,
@@ -1393,14 +1290,7 @@
               }
             }
           },
-          "block_order": [
-            "mobile-dock-0",
-            "mobile-dock-1",
-            "mobile-dock-2",
-            "mobile-dock-3",
-            "mobile-dock-4",
-            "mobile-dock-5"
-          ],
+          "block_order": ["mobile-dock-0", "mobile-dock-1", "mobile-dock-2", "mobile-dock-3", "mobile-dock-4", "mobile-dock-5"],
           "settings": {
             "use_custom_colors": false,
             "colors_text": "#1a1b18",
@@ -1437,11 +1327,7 @@
               }
             }
           },
-          "block_order": [
-            "age-verifier-0",
-            "age-verifier-1",
-            "age-verifier-2"
-          ],
+          "block_order": ["age-verifier-0", "age-verifier-1", "age-verifier-2"],
           "settings": {
             "mode": "disabled",
             "expiry": 30,
@@ -1565,11 +1451,7 @@
               }
             }
           },
-          "block_order": [
-            "announcement-bar-0",
-            "announcement-bar-1",
-            "announcement-bar-2"
-          ],
+          "block_order": ["announcement-bar-0", "announcement-bar-1", "announcement-bar-2"],
           "settings": {
             "only_homepage": true,
             "autorotate": true,
@@ -1621,11 +1503,7 @@
               }
             }
           },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
+          "block_order": ["footer-0", "footer-1", "footer-2"],
           "settings": {
             "newsletter_enable": true,
             "newsletter_heading": "Exclusive benefits",
@@ -1682,13 +1560,7 @@
               }
             }
           },
-          "block_order": [
-            "popup-0",
-            "popup-1",
-            "popup-2",
-            "popup-3",
-            "popup-4"
-          ],
+          "block_order": ["popup-0", "popup-1", "popup-2", "popup-3", "popup-4"],
           "settings": {
             "mode": "enabled",
             "only_homepage": true,
@@ -1728,10 +1600,7 @@
               }
             }
           },
-          "block_order": [
-            "cookie-banner-0",
-            "cookie-banner-1"
-          ],
+          "block_order": ["cookie-banner-0", "cookie-banner-1"],
           "settings": {
             "mode": "disabled",
             "delay": 5,
@@ -1792,14 +1661,7 @@
               }
             }
           },
-          "block_order": [
-            "mobile-dock-0",
-            "mobile-dock-1",
-            "mobile-dock-2",
-            "mobile-dock-3",
-            "mobile-dock-4",
-            "mobile-dock-5"
-          ],
+          "block_order": ["mobile-dock-0", "mobile-dock-1", "mobile-dock-2", "mobile-dock-3", "mobile-dock-4", "mobile-dock-5"],
           "settings": {
             "use_custom_colors": false,
             "colors_text": "#1a1b18",
@@ -1836,11 +1698,7 @@
               }
             }
           },
-          "block_order": [
-            "age-verifier-0",
-            "age-verifier-1",
-            "age-verifier-2"
-          ],
+          "block_order": ["age-verifier-0", "age-verifier-1", "age-verifier-2"],
           "settings": {
             "mode": "disabled",
             "expiry": 30,
@@ -1950,9 +1808,7 @@
               }
             }
           },
-          "block_order": [
-            "announcement-bar-0"
-          ],
+          "block_order": ["announcement-bar-0"],
           "settings": {
             "only_homepage": false,
             "autorotate": false,
@@ -2004,11 +1860,7 @@
               }
             }
           },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
+          "block_order": ["footer-0", "footer-1", "footer-2"],
           "settings": {
             "newsletter_enable": true,
             "newsletter_heading": "Exclusive benefits",
@@ -2065,13 +1917,7 @@
               }
             }
           },
-          "block_order": [
-            "popup-0",
-            "popup-1",
-            "popup-2",
-            "popup-3",
-            "popup-4"
-          ],
+          "block_order": ["popup-0", "popup-1", "popup-2", "popup-3", "popup-4"],
           "settings": {
             "mode": "enabled",
             "only_homepage": true,
@@ -2111,10 +1957,7 @@
               }
             }
           },
-          "block_order": [
-            "cookie-banner-0",
-            "cookie-banner-1"
-          ],
+          "block_order": ["cookie-banner-0", "cookie-banner-1"],
           "settings": {
             "mode": "disabled",
             "delay": 5,
@@ -2175,14 +2018,7 @@
               }
             }
           },
-          "block_order": [
-            "mobile-dock-0",
-            "mobile-dock-1",
-            "mobile-dock-2",
-            "mobile-dock-3",
-            "mobile-dock-4",
-            "mobile-dock-5"
-          ],
+          "block_order": ["mobile-dock-0", "mobile-dock-1", "mobile-dock-2", "mobile-dock-3", "mobile-dock-4", "mobile-dock-5"],
           "settings": {
             "use_custom_colors": false,
             "colors_text": "#1a1b18",
@@ -2219,11 +2055,7 @@
               }
             }
           },
-          "block_order": [
-            "age-verifier-0",
-            "age-verifier-1",
-            "age-verifier-2"
-          ],
+          "block_order": ["age-verifier-0", "age-verifier-1", "age-verifier-2"],
           "settings": {
             "mode": "disabled",
             "expiry": 30,
@@ -2377,11 +2209,7 @@
               }
             }
           },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
+          "block_order": ["footer-0", "footer-1", "footer-2"],
           "settings": {
             "newsletter_enable": false,
             "newsletter_heading": "Exclusive benefits",
@@ -2438,13 +2266,7 @@
               }
             }
           },
-          "block_order": [
-            "popup-0",
-            "popup-1",
-            "popup-2",
-            "popup-3",
-            "popup-4"
-          ],
+          "block_order": ["popup-0", "popup-1", "popup-2", "popup-3", "popup-4"],
           "settings": {
             "mode": "enabled",
             "only_homepage": true,
@@ -2484,10 +2306,7 @@
               }
             }
           },
-          "block_order": [
-            "cookie-banner-0",
-            "cookie-banner-1"
-          ],
+          "block_order": ["cookie-banner-0", "cookie-banner-1"],
           "settings": {
             "mode": "disabled",
             "delay": 5,
@@ -2546,14 +2365,7 @@
               }
             }
           },
-          "block_order": [
-            "mobile-dock-0",
-            "mobile-dock-1",
-            "mobile-dock-2",
-            "mobile-dock-3",
-            "mobile-dock-4",
-            "mobile-dock-5"
-          ],
+          "block_order": ["mobile-dock-0", "mobile-dock-1", "mobile-dock-2", "mobile-dock-3", "mobile-dock-4", "mobile-dock-5"],
           "settings": {
             "use_custom_colors": false,
             "colors_text": "#ffffff",
@@ -2590,11 +2402,7 @@
               }
             }
           },
-          "block_order": [
-            "age-verifier-0",
-            "age-verifier-1",
-            "age-verifier-2"
-          ],
+          "block_order": ["age-verifier-0", "age-verifier-1", "age-verifier-2"],
           "settings": {
             "mode": "disabled",
             "expiry": 30,
@@ -2635,13 +2443,9 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".list-mega-menu {display: flex !important; flex-direction: column !important; margin-left: 50px !important; margin-top: 10px !important;}",
-      ".mega-menu__item-link .header__menu-item {white-space: nowrap !important;}",
-      ".mega-menu__item {margin-bottom: -15px !important;}",
-      ".mega-menu__item:last-child {margin-bottom: 0 !important;}",
       "button[name=\"checkout\"] {background-color: green;}",
       ".product-form__submit.button.button--secondary.button--full-width {--font-button-size: 14px; background-color: green; color: white;}",
-      ".kqsiVA9Jf8LJAbxw8Bau .Xrk_DudB6JJ3t2Kh2_cU,.kqsiVA9Jf8LJAbxw8Bau .ElVMgDjOgshGFMIvg3se {font-size: 10px important;}"
+      ".kqsiVA9Jf8LJAbxw8Bau .Xrk_DudB6JJ3t2Kh2_cU,.kqsiVA9Jf8LJAbxw8Bau .ElVMgDjOgshGFMIvg3se {font-size: 10px !important;}"
     ]
   }
 }
