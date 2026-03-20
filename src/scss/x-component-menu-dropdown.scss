@@ -1,0 +1,20 @@
+@use "mixins/media" as *;
+
+.header__menu-item {
+  gap: 1rem;
+  
+  .icon-caret {
+    display: block;
+    height: 0.5rem;
+  }
+}
+
+.is-active > .header__menu-item {
+  .icon-caret {
+    transform: rotate(180deg);
+  }
+}
+
+.list-menu-dropdown {
+  background: rgb(var(--color-header-background));
+}

@@ -134,6 +134,7 @@
 
 {%- if enable_dropdown_menu -%}
   <link rel="stylesheet" href="{{ 'component-menu-dropdown.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'x-component-menu-dropdown.css' | asset_url }}" media="print" onload="this.media='all'">
   <script src="{{ 'menu-dropdown.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
@@ -367,7 +368,7 @@
                 loading="lazy"
                 width="{{ mobile_logo.width }}"
                 height="{{ mobile_logo.height }}"
-                alt="{{ mobile_logo.alt | default: shop.name | escape }}"
+                alt="{{ page_title | default: shop.name | escape }}"
                 class="header__heading-logo{% if enable_transparent_header and transparent_logo != blank %} normal{% endif %} medium-hide large-up-hide"
               />
             {%- endif -%}
@@ -377,7 +378,7 @@
               loading="lazy"
               width="{{ logo.width }}"
               height="{{ logo.height }}"
-              alt="{{ logo.alt | default: shop.name | escape }}"
+              alt="{{ page_title | default: shop.name | escape }}"
               class="header__heading-logo{% if enable_transparent_header and transparent_logo != blank %} normal{% endif %}{% if mobile_logo %} small-hide{% endif %}"
             />
 
@@ -1018,7 +1019,7 @@
         },
         {
           "type": "text",
-          "id": "menu_title",
+          "id": "heading",
           "label": "t:sections.header.blocks.mega_menu.settings.menu_title.label",
           "info": "t:sections.header.blocks.mega_menu.settings.menu_title.info"
         },
