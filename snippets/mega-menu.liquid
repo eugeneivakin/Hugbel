@@ -13,6 +13,7 @@
     {% endif %}
   >
     <span class="label">{{ link.title | escape }}</span>
+    {% render 'icon', icon: 'caret' %}
   </a>
   {%- if link.links != blank or promo_images -%}
     <div class="list-menu-dropdown hidden">

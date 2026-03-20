@@ -16,7 +16,7 @@
           assign link_title_handle = link.title | handle
 
           for block in blocks
-            assign menu_title_handle = block.settings.menu_title | handle
+            assign menu_title_handle = block.settings.heading | handle
             if menu_title_handle == link_title_handle
               assign enable_mega_menu = true
               assign mega_menu_block = block
