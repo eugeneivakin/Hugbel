@@ -11,6 +11,7 @@
   "sections": {
     "empty-space": {
       "type": "empty-space",
+      "disabled": true,
       "settings": {
         "desktop_height": 28,
         "mobile_height": 48
@@ -337,6 +338,26 @@
         "padding_bottom": 36
       }
     },
+    "173238278513ce13c1": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_3ehEc3": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_3ehEc3"
+      ],
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "faq_VyNWMP": {
       "type": "faq",
       "blocks": {
@@ -494,26 +515,6 @@
         "enable_quick_view": true,
         "enable_color_swatches": true,
         "enable_countdown": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "173238278513ce13c1": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_featured_carousel_3ehEc3": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_featured_carousel_3ehEc3"
-      ],
-      "settings": {
-        "include_margins": true,
-        "show_divider": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
