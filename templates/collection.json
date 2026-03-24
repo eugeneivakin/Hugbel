@@ -15,7 +15,7 @@
         "heading_size": "h2",
         "show_description": true,
         "show_image": true,
-        "apply_overlay": false,
+        "apply_overlay": true,
         "image_position": "center center",
         "image_ratio": "500px",
         "text_alignment": "center",
@@ -32,7 +32,7 @@
         "image_r3U4dg": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Black_And_White_Simple_Black_Friday_Sale_Banner_1200_x_400_px_3.jpg",
+            "image": "shopify://shop_images/Black_And_White_Simple_Black_Friday_Sale_Banner_1200_x_400_px_3.jpg",
             "image_position": "bottom center",
             "text_box_position": "bottom-center",
             "subheading": "",
@@ -49,7 +49,9 @@
           }
         }
       },
-      "block_order": ["image_r3U4dg"],
+      "block_order": [
+        "image_r3U4dg"
+      ],
       "disabled": true,
       "settings": {
         "slideshow_type": "modern",
@@ -90,8 +92,19 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "blocks": { "link_list_fw3bHM": { "type": "link_list", "disabled": true, "settings": { "heading": "Quick links", "menu": "" } } },
-      "block_order": ["link_list_fw3bHM"],
+      "blocks": {
+        "link_list_fw3bHM": {
+          "type": "link_list",
+          "disabled": true,
+          "settings": {
+            "heading": "Quick links",
+            "menu": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_list_fw3bHM"
+      ],
       "settings": {
         "products_per_row": 4,
         "rows_per_page": 12,
@@ -159,7 +172,10 @@
           }
         }
       },
-      "block_order": ["image_y6kDGD", "image_BmQYTA"],
+      "block_order": [
+        "image_y6kDGD",
+        "image_BmQYTA"
+      ],
       "disabled": true,
       "settings": {
         "slideshow_type": "modern",
@@ -184,5 +200,11 @@
       }
     }
   },
-  "order": ["banner", "slideshow_cY66Wy", "subs", "product-grid", "slideshow_awiHGq"]
+  "order": [
+    "banner",
+    "slideshow_cY66Wy",
+    "subs",
+    "product-grid",
+    "slideshow_awiHGq"
+  ]
 }
