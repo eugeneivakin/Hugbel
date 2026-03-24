@@ -12,3 +12,18 @@
 .kaching-bundles .kaching-bundles__bar-variant-names {
   font-size: 14px;
 }
+
+.product__info-wrapper {
+  .product__info-container > * + * {
+    margin: 1rem 0 0;
+  }
+
+  .product__text {
+    &:not(:only-child) {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 5px 0 0;
+      width: 50%;
+    }
+  }
+}
