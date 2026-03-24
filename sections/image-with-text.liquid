@@ -25,7 +25,7 @@
       #shopify-section-{{ section.id }} {
         --image-ratio-percent: {{ 1 | divided_by: section.settings.image_mobile.aspect_ratio | times: 100 }}%;
       }
-    }  
+    }
   {% endif -%}
 {%- endstyle -%}
 
@@ -50,60 +50,98 @@
   endif
 -%}
 
-<div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
-  <div class="image-with-text{% if section.settings.use_custom_colors and section.settings.colors_background != settings.colors_background %} image-with-text--colored{% else %} image-with-text--alt{% endif %}{% if section.settings.enlarge_content %} image-with-text--enlarge{% endif %} page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
-    <div class="{{ grid_class }} grid grid--gapless grid--1-col grid--2-col-tablet">
-      <div class="grid__item">
-        <use-animate data-animate="zoom-fade" class="media-wrapper">
-          <div class="image-animate media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} {% if section.settings.image != blank %}media{% else %}media--placeholder{% endif %}">
-            {%- if section.settings.image != blank -%}
-              {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 10rem) / 2), {% if section.settings.full_width %} 100vw{% else %} calc(100vw - 3rem){% endif %}{%- endcapture -%}
-              {%- liquid
-                if section.settings.image_mobile == blank
-                  echo section.settings.image | image_url: width: 1500 | image_tag: loading: 'lazy', class: 'image-fit', sizes: sizes, widths: '165, 360, 535, 750, 1100, 1500', is: 'lazy-image', alt: shop.name
-                else
-                  echo section.settings.image_mobile | image_url: width: 1500 | image_tag: loading: 'lazy', class: 'image-fit medium-hide large-up-hide', sizes: sizes, widths: '165, 360, 535, 750, 1100, 1500', is: 'lazy-image', alt: shop.name
-                  echo section.settings.image | image_url: width: 1500 | image_tag: loading: 'lazy', class: 'image-fit small-hide', sizes: sizes, widths: '165, 360, 535, 750, 1100, 1500', is: 'lazy-image', alt: shop.name
-                endif
-              -%}
-            {%- else -%}
-              {{ 'image' | placeholder_svg_tag: 'placeholder' }}
-            {%- endif -%}
-          </div>
-        </use-animate>
-      </div>
-      <div class="grid__item">
-        <div class="image-with-text__content {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
-          {%- for block in section.blocks -%}
-            {% case block.type %}
-              {%- when 'heading' -%}
-                <{{ block.settings.heading_tag }} class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</{{ block.settings.heading_tag }}>
-              {%- when 'subheading' -%}
-                <p class="image-with-text__subheading{% if block.settings.secondary_color %} image-with-text__subheading--colored{% endif %} {{ block.settings.subheading_size }}" {{ block.shopify_attributes }}>{{ block.settings.subheading | escape }}</p>
-              {%- when 'text' -%}
-                <div class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-              {%- when 'custom_liquid' -%}
-                <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.custom_liquid }}</div>
-              {%- when 'button' -%}
-                {%- if block.settings.button_label != blank -%}
-                  {%- if block.settings.button_style_secondary -%}
-                    <a class="button button--cta button--{{ block.settings.button_size }}"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-                      <span class="label">{{ block.settings.button_label | escape }}</span>
-                      {% render 'icon', icon: 'arrow' %}
-                    </a>
-                  {%- else -%}
-                    <a class="button button--{{ block.settings.button_size }}"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-                      {{ block.settings.button_label | escape }}
-                    </a>
+{%- assign block_heading = section.blocks | where: 'type', 'heading' -%}
+{%- assign block_text = section.blocks | where: 'type', 'text' -%}
+
+{% if block_heading[0].settings.heading != blank and block_text[0].settings.text != blank %}
+  <div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
+    <div class="image-with-text{% if section.settings.use_custom_colors and section.settings.colors_background != settings.colors_background %} image-with-text--colored{% else %} image-with-text--alt{% endif %}{% if section.settings.enlarge_content %} image-with-text--enlarge{% endif %} page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
+      <div class="{{ grid_class }} grid grid--gapless grid--1-col grid--2-col-tablet">
+        <div class="grid__item">
+          <use-animate data-animate="zoom-fade" class="media-wrapper">
+            <div class="image-animate media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} {% if section.settings.image != blank %}media{% else %}media--placeholder{% endif %}">
+              {%- if section.settings.image != blank -%}
+                {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 10rem) / 2), {% if section.settings.full_width %} 100vw{% else %} calc(100vw - 3rem){% endif %}{%- endcapture -%}
+                {%- liquid
+                  if section.settings.image_mobile == blank
+                    echo section.settings.image | image_url: width: 1500 | image_tag: loading: 'lazy', class: 'image-fit', sizes: sizes, widths: '165, 360, 535, 750, 1100, 1500', is: 'lazy-image', alt: shop.name
+                  else
+                    echo section.settings.image_mobile | image_url: width: 1500 | image_tag: loading: 'lazy', class: 'image-fit medium-hide large-up-hide', sizes: sizes, widths: '165, 360, 535, 750, 1100, 1500', is: 'lazy-image', alt: shop.name
+                    echo section.settings.image | image_url: width: 1500 | image_tag: loading: 'lazy', class: 'image-fit small-hide', sizes: sizes, widths: '165, 360, 535, 750, 1100, 1500', is: 'lazy-image', alt: shop.name
+                  endif
+                -%}
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder' }}
+              {%- endif -%}
+            </div>
+          </use-animate>
+        </div>
+        <div class="grid__item">
+          <div class="image-with-text__content {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
+            {%- for block in section.blocks -%}
+              {% case block.type %}
+                {%- when 'heading' -%}
+                  <{{ block.settings.heading_tag }}
+                    class="image-with-text__heading {{ block.settings.heading_size }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{- block.settings.heading | escape -}}
+                  </{{ block.settings.heading_tag }}>
+                {%- when 'subheading' -%}
+                  <p
+                    class="image-with-text__subheading{% if block.settings.secondary_color %} image-with-text__subheading--colored{% endif %} {{ block.settings.subheading_size }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.subheading | escape }}
+                  </p>
+                {%- when 'text' -%}
+                  <div
+                    class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{ block.settings.text }}
+                  </div>
+                {%- when 'custom_liquid' -%}
+                  <div class="image-with-text__text rte" {{ block.shopify_attributes }}>
+                    {{ block.settings.custom_liquid }}
+                  </div>
+                {%- when 'button' -%}
+                  {%- if block.settings.button_label != blank -%}
+                    {%- if block.settings.button_style_secondary -%}
+                      <a
+                        class="button button--cta button--{{ block.settings.button_size }}"
+                        {% if block.settings.button_link != blank %}
+                          href="{{ block.settings.button_link }}"
+                        {% else %}
+                          role="link" aria-disabled="true"
+                        {% endif %}
+                        {{ block.shopify_attributes }}
+                      >
+                        <span class="label">{{ block.settings.button_label | escape }}</span>
+                        {% render 'icon', icon: 'arrow' %}
+                      </a>
+                    {%- else -%}
+                      <a
+                        class="button button--{{ block.settings.button_size }}"
+                        {% if block.settings.button_link != blank %}
+                          href="{{ block.settings.button_link }}"
+                        {% else %}
+                          role="link" aria-disabled="true"
+                        {% endif %}
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.button_label | escape }}
+                      </a>
+                    {%- endif -%}
                   {%- endif -%}
-                {%- endif -%}
-            {%- endcase -%}
-          {%- endfor -%}
+              {%- endcase -%}
+            {%- endfor -%}
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+{% endif %}
 
 {% schema %}
 {
