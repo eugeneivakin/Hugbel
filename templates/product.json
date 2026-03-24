@@ -498,6 +498,54 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_4RbEzH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_D7BFY7": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.storytale.value.heading.value }}",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_PWCDxX": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.storytale.value.description | metafield_tag }}",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_D7BFY7",
+        "text_PWCDxX"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/boho-lamps-factory.png",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "faq_AJYpp7": {
       "type": "faq",
       "blocks": {
@@ -700,6 +748,7 @@
     "faq_VyNWMP",
     "1755181834274851c4",
     "image_banner_NtgPg7",
+    "image_with_text_4RbEzH",
     "faq_AJYpp7",
     "product_details_mQEdP7",
     "product-recommendations",
