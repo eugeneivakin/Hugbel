@@ -58,6 +58,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {%- liquid
       render 'css-variables'
       echo 'base.css' | asset_url | stylesheet_tag: preload: true
+      echo 'x-base.css' | asset_url | stylesheet_tag: preload: true
       echo 'x-opus-drawer.css' | asset_url | stylesheet_tag: preload: true
       
       if text_direction == 'rtl'

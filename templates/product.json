@@ -262,31 +262,6 @@
         "padding_bottom": 12
       }
     },
-    "175186749008d6c2ec": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_exRJGg": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_exRJGg"
-      ],
-      "disabled": true,
-      "custom_css": [],
-      "settings": {
-        "include_margins": true,
-        "show_divider": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn_8QJWdj": {
       "type": "multicolumn",
       "blocks": {
@@ -499,84 +474,6 @@
         "padding_bottom": 36
       }
     },
-    "faq_AJYpp7": {
-      "type": "faq",
-      "blocks": {
-        "question_QtiGAb": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
-          }
-        },
-        "question_W8Dgtf": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "question_QtiGAb",
-        "question_W8Dgtf"
-      ],
-      "disabled": true,
-      "settings": {
-        "narrow": false,
-        "secondary_background": false,
-        "show_divider": false,
-        "heading": "FAQs",
-        "heading_size": "h1",
-        "heading_alignment": "left",
-        "heading_tag": "h2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "product_details_mQEdP7": {
-      "type": "product-details",
-      "blocks": {
-        "collapsible_tab_iYedxj": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "content": "<p><strong>Product dimensions:</strong> H77.6 x W92 x D71.5cm / H31 x W36 x D28\"</p><p><strong>Product weight:</strong> 27.5kg / 60.6lbs</p><p><strong>Packaged or boxed dimensions:</strong> H82 x W96 x D76cm / H32.1 x W37.8 x D29.7\"</p><p><strong>Packaged or boxed weight:</strong> 32kg / 70.5lbs</p>",
-            "page": ""
-          }
-        },
-        "collapsible_tab_EGiTyG": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Details",
-            "content": "<p><strong>Arm height:</strong> 51.1cm</p><p><strong>Seat depth:</strong> 58cm</p><p><strong>Seat width:</strong> 57.1cm</p><p><strong>Seat height:</strong> 42.1cm</p><p><strong>Frame:</strong> Oak</p><p><strong>Feet:</strong> Oak</p><p><strong>Assembly Required:</strong> No</p><p><strong>Care Instructions:</strong> Professional Upholstery Cleaning only</p><p><strong>Fabric:</strong> 100% Leather</p>",
-            "page": ""
-          }
-        },
-        "collapsible_tab_zM9L9d": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Installation",
-            "content": "<ul><li>Cover furniture with outdoor covers when left outside during inclement weather or when not in use. Make sure furniture is completely dry before covering.</li><li>Wash frame with a mild solution of soap and water; rinse with clean water and dry thoroughly.</li><li>Wipe spills with a clean dry cloth.</li><li>Avoid the use of harsh cleaners and abrasives.</li></ul>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_tab_iYedxj",
-        "collapsible_tab_EGiTyG",
-        "collapsible_tab_zM9L9d"
-      ],
-      "disabled": true,
-      "settings": {
-        "open_first_collapsible_row": false,
-        "heading": "Product Details",
-        "heading_size": "h2",
-        "heading_tag": "h2",
-        "padding_top": 80,
-        "padding_bottom": 20
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -609,85 +506,14 @@
           "settings": {
             "maxwidth": 1080
           }
-        },
-        "judge_me_reviews_ugc_media_grid_ny36Qw": {
-          "type": "shopify://apps/judge-me-reviews/blocks/ugc_media_grid/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {}
         }
       },
       "block_order": [
-        "judge_me_reviews_featured_carousel_3ehEc3",
-        "judge_me_reviews_ugc_media_grid_ny36Qw"
+        "judge_me_reviews_featured_carousel_3ehEc3"
       ],
       "settings": {
         "include_margins": true,
         "show_divider": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "bundle_products_txd7er": {
-      "type": "bundle-products",
-      "blocks": {
-        "product_ApKXPb": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "image_ratio": "adapt",
-            "show_vendor": false,
-            "show_quick_buy": false,
-            "enable_quick_view": true,
-            "color": "#000000",
-            "horizontal": 30,
-            "vertical": 40
-          }
-        },
-        "product_CEFJt7": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "image_ratio": "adapt",
-            "show_vendor": false,
-            "show_quick_buy": false,
-            "enable_quick_view": true,
-            "color": "#000000",
-            "horizontal": 70,
-            "vertical": 45
-          }
-        },
-        "product_egUN3f": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "image_ratio": "adapt",
-            "show_vendor": false,
-            "show_quick_buy": false,
-            "enable_quick_view": true,
-            "color": "#000000",
-            "horizontal": 45,
-            "vertical": 65
-          }
-        }
-      },
-      "block_order": [
-        "product_ApKXPb",
-        "product_CEFJt7",
-        "product_egUN3f"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "image_first",
-        "text_box_position": "top",
-        "text_alignment": "left",
-        "mobile_text_alignment": "left",
-        "full_width": false,
-        "show_divider": false,
-        "subheading": "Bundle & Save",
-        "subheading_size": "h5",
-        "heading": "Build Your Own Basket",
-        "heading_size": "h1",
-        "heading_tag": "h2",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -696,15 +522,11 @@
   "order": [
     "empty-space",
     "main",
-    "175186749008d6c2ec",
     "multicolumn_8QJWdj",
+    "173238278513ce13c1",
     "faq_VyNWMP",
     "image_with_text_4RbEzH",
     "1755181834274851c4",
-    "faq_AJYpp7",
-    "product_details_mQEdP7",
-    "product-recommendations",
-    "173238278513ce13c1",
-    "bundle_products_txd7er"
+    "product-recommendations"
   ]
 }

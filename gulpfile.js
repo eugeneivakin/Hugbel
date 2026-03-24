@@ -52,5 +52,5 @@ function watchTask() {
   watch("src/images/*.{jpg,png}", optimizeImg);
 }
 
-exports.default = series(compilescss, fonts, jsmin, optimizeImg, watchTask);
+exports.default = series(compilescss, /*fonts, jsmin, optimizeImg,*/ watchTask);
 exports.minifyAssetsJS = minifyAssetsJS;
