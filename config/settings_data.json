@@ -182,6 +182,7 @@
         "blocks": {
           "mega_menu_a6XL7H": {
             "type": "mega_menu",
+            "disabled": true,
             "settings": {
               "heading": "By type",
               "narrow": true,
@@ -222,6 +223,7 @@
           },
           "mega_menu_yM7Kkg": {
             "type": "mega_menu",
+            "disabled": true,
             "settings": {
               "heading": "Top collections",
               "narrow": true,
