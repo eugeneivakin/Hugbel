@@ -1,0 +1,21 @@
+@use "mixins/media" as *;
+
+.shopify-section--image-banner {
+  .banner--text {
+    .banner__media {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    .banner__content {
+      height: auto;
+      position: relative;
+    }
+  }
+
+  .banner__box {
+    width: auto;
+  }
+}
