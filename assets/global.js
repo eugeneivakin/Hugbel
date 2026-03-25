@@ -2313,7 +2313,9 @@ class AnimateSticky extends HTMLElement {
 
   shouldReveal() {
     if (this.targetElement) {
-      return this.targetElement.getBoundingClientRect().bottom <= 0;
+      const rect = this.targetElement.getBoundingClientRect();
+      const inViewport = rect.bottom > 0 && rect.top < window.innerHeight;
+      return !inViewport;
     }
 
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
