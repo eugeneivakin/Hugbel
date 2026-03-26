@@ -1,0 +1,16 @@
+@use "mixins/media" as *;
+
+.shopify-section--storytale {
+  .media-wrapper {
+    position: sticky;
+    top: 0;
+  }
+  
+  .metafield-rich_text_field {
+    p {
+      br {
+        display: none;
+      }
+    }
+  }
+}

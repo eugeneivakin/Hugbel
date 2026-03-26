@@ -30,6 +30,7 @@
 {%- endstyle -%}
 
 {{ 'section-image-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'x-section-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign grid_class = 'image-with-text__grid'
@@ -107,7 +108,7 @@
 {
   "name": "Storytale",
   "tag": "section",
-  "class": "section",
+  "class": "section shopify-section--storytale",
   "settings": [
     {
       "type": "image_picker",
