@@ -48,20 +48,20 @@
   if section.settings.mobile_layout == 'overlap'
     assign grid_class = grid_class | append: ' image-with-text__grid-mobile--overlap'
   endif
--%}
 
-{% if product.metafields.custom.storytale != blank %}
-  {%- assign metaobject = product.metafields.custom.storytale.value -%}
-  {% assign metaobject_source = 'product' %}
-{% else %}
-  {% for collection in product.collections %}
-    {% if collection.metafields.custom.storytale != blank %}
-      {%- assign metaobject = collection.metafields.custom.storytale.value -%}
-      {% assign metaobject_source = 'collection' %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
-{% endif %}
+  if product.metafields.custom.storytale != blank
+    assign metaobject = product.metafields.custom.storytale.value
+    assign metaobject_source = 'product'
+  else
+    for collection in product.collections
+      if collection.metafields.custom.storytale != blank
+        assign metaobject = collection.metafields.custom.storytale.value
+        assign metaobject_source = 'collection'
+        break
+      endif
+    endfor
+  endif
+-%}
 
 {% if metaobject.heading != blank or metaobject.description != blank %}
   <div
