@@ -103,6 +103,7 @@
         "blocks": {
           "announcement_BkLYzx": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Note: Orders placed in Feb will be dispatched end of February/beginning of March as part of our next production cycle.",
               "text_on_mobile": "Note: Orders placed after 7th Feb will be dispatched towards the end of February as part of our next production cycle.",
