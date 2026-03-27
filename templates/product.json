@@ -9,25 +9,9 @@
  */
 {
   "sections": {
-    "empty-space": {
-      "type": "empty-space",
-      "disabled": true,
-      "settings": {
-        "desktop_height": 28,
-        "mobile_height": 48
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
-        "breadcrumb_JLj3X9": {
-          "type": "breadcrumb",
-          "disabled": true,
-          "settings": {
-            "text_style": "body",
-            "show_divider": false
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -75,7 +59,7 @@
           "type": "text",
           "settings": {
             "icon": "truck",
-            "text": "Free shipping",
+            "text": "Text blockFree shipping",
             "text_style": "body"
           }
         },
@@ -104,50 +88,14 @@
             "show_dynamic_checkout": false
           }
         },
-        "judge_me_reviews_review_snippet_widget_ktzYUf": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
         "custom_liquid_dCUFUd": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "<div style=\"text-align: center; margin-top: 16px; margin-bottom: 4px;\">\n  <img \n    src=\"https://cdn.shopify.com/s/files/1/0843/0000/5708/files/Transparent_img.png?v=1751877750\" \n    alt=\"Secure checkout badges\" \n    style=\"max-width: 300px; width: 100%; height: auto;\"\n  >\n</div>\n\n<style>\n  .hugbel-trust-line {\n    font-size: 13px;\n    color: #444;\n    letter-spacing: 0.2px;\n    display: flex;\n    justify-content: center;\n    gap: 24px;\n    align-items: center;\n    margin-top: 8px;\n    margin-bottom: 24px;\n    text-align: center;\n    flex-wrap: wrap;\n  }\n\n  .hugbel-trust-line span {\n    display: flex;\n    align-items: center;\n    gap: 6px;\n    white-space: nowrap;\n  }\n\n  @media (max-width: 767px) {\n    .hugbel-trust-line {\n      font-size: 12px;\n      gap: 12px;\n      margin-top: 6px;\n      margin-bottom: 18px;\n    }\n  }\n</style>\n\n<div class=\"hugbel-trust-line\">\n  <span>🚚 Free Shipping</span>\n  <span>🔁 30-Day Trial</span>\n  <span>🛡️ 2-Year Warranty</span>\n</div>"
           }
         },
-        "spacing_wAEGCG": {
-          "type": "spacing",
-          "disabled": true,
-          "settings": {
-            "desktop_height": 28,
-            "mobile_height": 20
-          }
-        },
-        "custom_liquid_M3nzfp": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "{% if product.tags contains 'hugbel100' %}\n\n<div style=\"margin:12px 0 10px 0; font-family:inherit;\">\n\n  <div style=\"\n    display:flex;\n    align-items:center;\n    gap:10px;\n  \">\n\n    <!-- enhanced pulsing green dot -->\n    <span \n      style=\"\n        width:14px;\n        height:14px;\n        border-radius:50%;\n        background:#34a36f; /* premium green */\n        box-shadow:0 0 0 4px rgba(52,163,111,0.28); /* stronger halo */\n        display:inline-block;\n        animation:hugbelGreenPulse 1.4s ease-in-out infinite;\n        flex-shrink:0;\n      \">\n    </span>\n\n    <!-- punchy bestseller line -->\n    <span style=\"\n      font-size:1.3rem;\n      font-weight:500;\n      line-height:1.25;\n      color:#2b2b2b;\n      letter-spacing:0.005em;\n    \">\n      Best seller – only a few left\n    </span>\n\n  </div>\n\n</div>\n\n<style>\n  @keyframes hugbelGreenPulse {\n    0%   { transform:scale(1); opacity:1; }\n    50%  { transform:scale(1.25); opacity:0.55; } /* more obvious pulse */\n    100% { transform:scale(1); opacity:1; }\n  }\n</style>\n\n{% endif %}"
-          }
-        },
-        "custom_liquid_k874Pm": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<div style=\"margin:12px 0 14px 0; font-family:inherit;\">\n\n  <!-- LINE 1: Stock warning -->\n  <div style=\"\n    display:flex;\n    align-items:center;\n    gap:10px;\n    margin-bottom:4px;\n  \">\n    <span \n      style=\"\n        width:12px;\n        height:12px;\n        border-radius:50%;\n        background:#c64038; /* matches sale red */\n        box-shadow:0 0 0 3px rgba(198,64,56,0.25);\n        display:inline-block;\n        animation:hugbelBFpulse 1.8s ease-in-out infinite;\n        flex-shrink:0;\n      \">\n    </span>\n\n    <span style=\"\n      font-size:1.2rem;\n      font-weight:500;\n      line-height:1.25;\n      color:#2b2b2b;\n      letter-spacing:0.005em;\n    \">\n      Black Friday stock running low\n    </span>\n  </div>\n\n  <!-- LINE 2: Countdown -->\n  <div id=\"bf-countdown\"\n    style=\"\n      display:flex;\n      align-items:center;\n      gap:10px;\n      padding-left:22px; /* aligns text under line 1 */\n      font-size:1.2rem;\n      font-weight:400;\n      line-height:1.25;\n      color:#2b2b2b;\n      letter-spacing:0.005em;\n    \"\n  >\n    <span style=\"font-size:1.2rem;\">⏳</span>\n    <span>Code BLACKFRIDAY expires in</span>\n    <span class=\"bf-countdown__time\" style=\"font-weight:500; color:#c64038;\">--</span>\n  </div>\n\n</div>\n\n<style>\n  @keyframes hugbelBFpulse {\n    0%   { transform:scale(1);   opacity:1; }\n    50%  { transform:scale(1.12); opacity:0.75; }\n    100% { transform:scale(1);   opacity:1; }\n  }\n</style>\n\n<script>\n(function() {\n  var el = document.getElementById('bf-countdown');\n  if (!el) return;\n\n  // Phase 1: Black Friday hard deadline\n  var bfEnd = new Date('2025-11-29T00:00:00');\n  var rollingTarget = null;\n\n  function new24hTimer(now) {\n    return new Date(now.getTime() + 24 * 60 * 60 * 1000);\n  }\n\n  function tick() {\n    var now = new Date();\n    var target;\n\n    if (now < bfEnd) {\n      // Before 29th 00:00 → count down to BF end\n      target = bfEnd;\n    } else {\n      // After BF → rolling 24h cycles\n      if (!rollingTarget || rollingTarget <= now) {\n        rollingTarget = new24hTimer(now);\n      }\n      target = rollingTarget;\n    }\n\n    var diff = target - now;\n\n    var d = Math.floor(diff / (1000 * 60 * 60 * 24));\n    var h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));\n    var m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));\n    var s = Math.floor((diff % (1000 * 60)) / 1000);\n\n    var parts = [];\n    if (d > 0) parts.push(d + \"d\");\n    parts.push(String(h).padStart(2, '0') + \"h\");\n    parts.push(String(m).padStart(2, '0') + \"m\");\n    parts.push(String(s).padStart(2, '0') + \"s\");\n\n    el.querySelector(\".bf-countdown__time\").textContent = parts.join(\" \");\n  }\n\n  tick();\n  setInterval(tick, 1000);\n})();\n</script>"
-          }
-        },
-        "inventory_status": {
-          "type": "inventory_status",
-          "disabled": true,
-          "settings": {
-            "inventory_threshold": 20,
-            "show_inventory_transfer": true,
-            "color_scheme": "accent-2"
-          }
-        },
-        "description": {
-          "type": "description",
-          "disabled": true,
+        "judge_me_reviews_review_snippet_widget_ktzYUf": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
         "collapsible_description_7gVnmA": {
@@ -155,7 +103,7 @@
           "settings": {
             "opened": true,
             "icon": "none",
-            "heading": "Product Details              （ tap to view)"
+            "heading": "Product Details (tap to close)"
           }
         },
         "05a74346-1eef-4c62-8038-dd320cef7c34": {
@@ -182,20 +130,11 @@
             "page": ""
           }
         },
-        "text_PcKWnV": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "icon": "price_tag",
-            "text": "Trade discount application",
-            "text_style": "body"
-          }
-        },
         "text_CXUk7k": {
           "type": "text",
           "settings": {
             "icon": "question_mark",
-            "text": "questions: info@hugbel.com",
+            "text": "questions: <a href=\"mailto:info@hugbel.com\" title=\"mailto:info@hugbel.com\">info@hugbel.com</a>",
             "text_style": "uppercase"
           }
         },
@@ -203,7 +142,7 @@
           "type": "text",
           "settings": {
             "icon": "chat_bubble",
-            "text": "RFQ: sales@hugbel.com",
+            "text": "RFQ: <a href=\"mailto:sales@hugbel.com\" title=\"mailto:sales@hugbel.com\">sales@hugbel.com</a>",
             "text_style": "uppercase"
           }
         },
@@ -212,15 +151,9 @@
           "settings": {
             "custom_liquid": "<a href=\"https://hugbel.com/pages/trade-page\"\n   class=\"cta-trade\"\n   aria-label=\"Apply for the Trade Program\">\n  Trade Program Application\n</a>\n\n<style>\n  .cta-trade {\n    display: block;\n    width: 100%;\n    max-width: 100%; /* will match Add to Cart container width */\n    text-align: center;\n    background: #000000;\n    color: #ffffff;\n    text-decoration: none;\n    padding: 10px 20px;\n    font-size: 14px;\n    text-transform: uppercase;\n    letter-spacing: 0.06em;\n    border-radius: 0; /* matches your flat Add to Cart button style */\n    font-family: inherit;\n    transition: background 0.2s ease, transform 0.06s ease;\n    margin-top: 14px;\n  }\n  .cta-trade:hover {\n    background: #222222;\n    transform: translateY(-1px);\n  }\n  .cta-trade:active {\n    transform: translateY(0);\n  }\n</style>"
           }
-        },
-        "rating_mWfdnX": {
-          "type": "rating",
-          "disabled": true,
-          "settings": {}
         }
       },
       "block_order": [
-        "breadcrumb_JLj3X9",
         "title",
         "custom_liquid_7XNFYH",
         "custom_liquid_8JBNqg",
@@ -231,22 +164,15 @@
         "text_cfU4JU",
         "variant_picker",
         "buy_buttons",
-        "judge_me_reviews_review_snippet_widget_ktzYUf",
         "custom_liquid_dCUFUd",
-        "spacing_wAEGCG",
-        "custom_liquid_M3nzfp",
-        "custom_liquid_k874Pm",
-        "inventory_status",
-        "description",
+        "judge_me_reviews_review_snippet_widget_ktzYUf",
         "collapsible_description_7gVnmA",
         "05a74346-1eef-4c62-8038-dd320cef7c34",
         "collapsible_tab_HH7Gnd",
         "d4db1b4e-c08b-4691-8302-7b25e0799608",
-        "text_PcKWnV",
         "text_CXUk7k",
         "text_JYiDDB",
-        "custom_liquid_XrcBiq",
-        "rating_mWfdnX"
+        "custom_liquid_XrcBiq"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -262,6 +188,72 @@
         "show_mobile_thumbnails": true,
         "padding_top": 0,
         "padding_bottom": 12
+      }
+    },
+    "faq_VyNWMP": {
+      "type": "faq",
+      "blocks": {
+        "question_BYeqtT": {
+          "type": "question",
+          "settings": {
+            "title": "Does the product fit my country's electricity standard/plug standard?",
+            "text": "<p>We are working with suppliers who are specialised in producing products that fit different international standards - we will carefully process the products according to your delivery address - if there's a different requirement please write to info@hugbel.com</p>"
+          }
+        },
+        "question_7FMMCE": {
+          "type": "question",
+          "settings": {
+            "title": "Is my payment data safe with you?",
+            "text": "<p>All direct payment gateways adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express, and Discover.</p>"
+          }
+        },
+        "question_9jrziF": {
+          "type": "question",
+          "settings": {
+            "title": "What do I do if my product is broken during transport?",
+            "text": "<p>We strive to package your orders carefully and with appropriate protection to ensure you always an undamaged delivery.</p><p>In the event that the goods arrive at their destination broken or damaged, <strong>we will replace the product at our expense.</strong></p>"
+          }
+        },
+        "question_rpHWJY": {
+          "type": "question",
+          "settings": {
+            "title": "How long does it take to get my products?",
+            "text": "<p><strong>Processing time: </strong>We strive for a swift preparation process and orders are typically processed and dispatched within 2-4 business days so that customers can receive their items promptly.</p><p><strong>Free Shipping time:</strong> The timeline below provided is an estimate, and actual shipping times may vary depending on item availability, order volume, and the final destination. </p><ul><li>AU: 5 to 10 business days </li><li>US: 6 to 20 business days </li><li>UK: 6 to 12 business days</li><li>EU: 6 to 12 business days</li><li>Rest of the World: 6 to 20 business days (please inquire at info@hugbel.com for more details) </li></ul><p>In case you need <strong>express delivery</strong>, we can arrange at an additional cost, please contact info@hugbel for the quote with a link to your desired product before placing an order.</p>"
+          }
+        },
+        "question_waYq3U": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer warranty for your products?",
+            "text": "<p>Our warranty provides a 2 year guarantee against manufacturer defects.<br/><br/>The guarantee covers any manufacturing, design, or material defect. </p><p><br/>It does not cover blows, improper use, or other issues that are not attributable to a manufacturer defects.</p><p>All our products are subject to quality control.</p>"
+          }
+        },
+        "question_W8f86E": {
+          "type": "question",
+          "settings": {
+            "title": "How can i reach you if i have other questions?",
+            "text": "<p>If you have any further questions or concerns that we haven't highlighted, please do not hesitate to contact us at info@hugbel.com - we're here to help!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_BYeqtT",
+        "question_7FMMCE",
+        "question_9jrziF",
+        "question_rpHWJY",
+        "question_waYq3U",
+        "question_W8f86E"
+      ],
+      "settings": {
+        "narrow": false,
+        "secondary_background": false,
+        "show_divider": false,
+        "heading": "FAQs",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "multicolumn_8QJWdj": {
@@ -335,72 +327,6 @@
         "mobile_text_alignment": "center",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "faq_VyNWMP": {
-      "type": "faq",
-      "blocks": {
-        "question_BYeqtT": {
-          "type": "question",
-          "settings": {
-            "title": "Does the product fit my country's electricity standard/plug standard?",
-            "text": "<p>We are working with suppliers who are specialised in producing products that fit different international standards - we will carefully process the products according to your delivery address - if there's a different requirement please write to info@hugbel.com</p>"
-          }
-        },
-        "question_7FMMCE": {
-          "type": "question",
-          "settings": {
-            "title": "Is my payment data safe with you?",
-            "text": "<p>All direct payment gateways adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express, and Discover.</p>"
-          }
-        },
-        "question_9jrziF": {
-          "type": "question",
-          "settings": {
-            "title": "What do I do if my product is broken during transport?",
-            "text": "<p>We strive to package your orders carefully and with appropriate protection to ensure you always an undamaged delivery.</p><p>In the event that the goods arrive at their destination broken or damaged, <strong>we will replace the product at our expense.</strong></p>"
-          }
-        },
-        "question_rpHWJY": {
-          "type": "question",
-          "settings": {
-            "title": "How long does it take to get my products?",
-            "text": "<p><strong>Processing time: </strong>We strive for a swift preparation process and orders are typically processed and dispatched within 2-4 business days so that customers can receive their items promptly.</p><p><strong>Free Shipping time:</strong> The timeline below provided is an estimate, and actual shipping times may vary depending on item availability, order volume, and the final destination. </p><ul><li>AU: 5 to 10 business days </li><li>US: 6 to 20 business days </li><li>UK: 6 to 12 business days</li><li>EU: 6 to 12 business days</li><li>Rest of the World: 6 to 20 business days (please inquire at info@hugbel.com for more details) </li></ul><p>In case you need <strong>express delivery</strong>, we can arrange at an additional cost, please contact info@hugbel for the quote with a link to your desired product before placing an order.</p>"
-          }
-        },
-        "question_waYq3U": {
-          "type": "question",
-          "settings": {
-            "title": "Do you offer warranty for your products?",
-            "text": "<p>Our warranty provides a 2 year guarantee against manufacturer defects.<br/><br/>The guarantee covers any manufacturing, design, or material defect. </p><p><br/>It does not cover blows, improper use, or other issues that are not attributable to a manufacturer defects.</p><p>All our products are subject to quality control.</p>"
-          }
-        },
-        "question_W8f86E": {
-          "type": "question",
-          "settings": {
-            "title": "How can i reach you if i have other questions?",
-            "text": "<p>If you have any further questions or concerns that we haven't highlighted, please do not hesitate to contact us at info@hugbel.com - we're here to help!</p>"
-          }
-        }
-      },
-      "block_order": [
-        "question_BYeqtT",
-        "question_7FMMCE",
-        "question_9jrziF",
-        "question_rpHWJY",
-        "question_waYq3U",
-        "question_W8f86E"
-      ],
-      "settings": {
-        "narrow": false,
-        "secondary_background": false,
-        "show_divider": false,
-        "heading": "FAQs",
-        "heading_size": "h1",
-        "heading_alignment": "left",
-        "heading_tag": "h2",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -500,10 +426,9 @@
     }
   },
   "order": [
-    "empty-space",
     "main",
-    "multicolumn_8QJWdj",
     "faq_VyNWMP",
+    "multicolumn_8QJWdj",
     "173238278513ce13c1",
     "image_with_text_storytale_HpFK99",
     "1755181834274851c4",
