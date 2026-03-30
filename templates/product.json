@@ -59,7 +59,7 @@
           "type": "text",
           "settings": {
             "icon": "truck",
-            "text": "Text blockFree shipping",
+            "text": "Free shipping",
             "text_style": "body"
           }
         },
