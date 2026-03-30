@@ -277,7 +277,7 @@
             "icon": "package",
             "title": "Return Policy",
             "title_size": "h2",
-            "text": "<p>A 60-day return policy is available for all purchases.</p>",
+            "text": "<p>A 30-day return policy is available for all purchases.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
