@@ -287,7 +287,7 @@
           "type": "column",
           "settings": {
             "icon": "tools",
-            "title": "Customization  Available",
+            "title": "Customization Available",
             "title_size": "h3",
             "text": "<p>Our team can customize selected products to suit your space, size, or setup needs.</p>",
             "button_label": "",
@@ -320,7 +320,7 @@
         "image_position": "center center",
         "text_alignment": "center",
         "show_divider": false,
-        "heading": "We Promise!",
+        "heading": "Why Shop With Hugbel",
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h2",
