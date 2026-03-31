@@ -262,7 +262,7 @@
         "column_n6zNcz": {
           "type": "column",
           "settings": {
-            "icon": "shield",
+            "icon": "wallet",
             "title": "30-Day Money-Back Guarantee",
             "title_size": "h3",
             "text": "<p>Hassle-free returns, exchanges, or damage support within 30 days of delivery.</p>",
@@ -274,7 +274,7 @@
         "column_zcGkzV": {
           "type": "column",
           "settings": {
-            "icon": "shield",
+            "icon": "shield-check",
             "title": "2-Year Warranty",
             "title_size": "h3",
             "text": "<p>Enjoy long-term peace of mind with warranty coverage on eligible products.</p>",
@@ -286,7 +286,7 @@
         "column_cRj9Xq": {
           "type": "column",
           "settings": {
-            "icon": "shield",
+            "icon": "tools",
             "title": "Customization  Available",
             "title_size": "h3",
             "text": "<p>Our team can customize selected products to suit your space, size, or setup needs.</p>",
@@ -298,7 +298,7 @@
         "column_EdLUCt": {
           "type": "column",
           "settings": {
-            "icon": "shield",
+            "icon": "document-check",
             "title": "Compliance Information",
             "title_size": "h3",
             "text": "<p>Product certification and compatibility details are available on the product page or on request.</p>",
