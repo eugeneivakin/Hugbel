@@ -259,8 +259,33 @@
     "multicolumn_8QJWdj": {
       "type": "multicolumn",
       "blocks": {
+        "column_n6zNcz": {
+          "type": "column",
+          "settings": {
+            "icon": "shield",
+            "title": "30-Day Money-Back Guarantee",
+            "title_size": "h3",
+            "text": "<p>Hassle-free returns, exchanges, or damage support within 30 days of delivery.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_zcGkzV": {
+          "type": "column",
+          "settings": {
+            "icon": "shield",
+            "title": "2-Year Warranty",
+            "title_size": "h3",
+            "text": "<p>Enjoy long-term peace of mind with warranty coverage on eligible products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
         "column_4Dw9mb": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "icon": "mail",
             "title": "Safety Certification",
@@ -273,6 +298,7 @@
         },
         "column_YfCRRr": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "icon": "package",
             "title": "Return Policy",
@@ -285,6 +311,7 @@
         },
         "column_qrXqee": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "icon": "shield",
             "title": "Ship Insurance",
@@ -297,6 +324,7 @@
         },
         "column_6YqmqX": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "icon": "recycle",
             "title": "Efficient LED Tech",
@@ -309,6 +337,8 @@
         }
       },
       "block_order": [
+        "column_n6zNcz",
+        "column_zcGkzV",
         "column_4Dw9mb",
         "column_YfCRRr",
         "column_qrXqee",
