@@ -286,7 +286,7 @@
         "column_cRj9Xq": {
           "type": "column",
           "settings": {
-            "icon": "none",
+            "icon": "shield",
             "title": "Customization  Available",
             "title_size": "h3",
             "text": "<p>Our team can customize selected products to suit your space, size, or setup needs.</p>",
@@ -298,62 +298,10 @@
         "column_EdLUCt": {
           "type": "column",
           "settings": {
-            "icon": "none",
-            "title": "Column",
-            "title_size": "h3",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        },
-        "column_4Dw9mb": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "icon": "mail",
-            "title": "Safety Certification",
-            "title_size": "h2",
-            "text": "<p>Compliant with North America, Australia, Europe Certification.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        },
-        "column_YfCRRr": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "icon": "package",
-            "title": "Return Policy",
-            "title_size": "h2",
-            "text": "<p>A 30-day return policy is available for all purchases.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        },
-        "column_qrXqee": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
             "icon": "shield",
-            "title": "Ship Insurance",
-            "title_size": "h2",
-            "text": "<p>Lost or damaged packages receive a full refund or replacement.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        },
-        "column_6YqmqX": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "icon": "recycle",
-            "title": "Efficient LED Tech",
-            "title_size": "h2",
-            "text": "<p>Energy-efficient LED technology for sustainability and savings.</p>",
+            "title": "Compliance Information",
+            "title_size": "h3",
+            "text": "<p>Product certification and compatibility details are available on the product page or on request.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -364,11 +312,7 @@
         "column_n6zNcz",
         "column_zcGkzV",
         "column_cRj9Xq",
-        "column_EdLUCt",
-        "column_4Dw9mb",
-        "column_YfCRRr",
-        "column_qrXqee",
-        "column_6YqmqX"
+        "column_EdLUCt"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
