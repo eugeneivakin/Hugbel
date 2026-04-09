@@ -43,7 +43,7 @@
           "type": "text",
           "settings": {
             "icon": "box",
-            "text": "30 day return policy",
+            "text": "<strong>30 day return policy</strong>",
             "text_style": "body"
           }
         },
@@ -51,7 +51,7 @@
           "type": "text",
           "settings": {
             "icon": "star",
-            "text": "2 years warranty",
+            "text": "<strong>2 years warranty</strong>",
             "text_style": "body"
           }
         },
@@ -59,7 +59,7 @@
           "type": "text",
           "settings": {
             "icon": "truck",
-            "text": "Free shipping",
+            "text": "<strong>Free shipping</strong>",
             "text_style": "body"
           }
         },
@@ -67,7 +67,7 @@
           "type": "text",
           "settings": {
             "icon": "ruler",
-            "text": "Certified for safety",
+            "text": "<strong>Certified for safety</strong>",
             "text_style": "body"
           }
         },
@@ -103,7 +103,7 @@
           "settings": {
             "opened": true,
             "icon": "none",
-            "heading": "Product Details (tap to close)"
+            "heading": "Product Details (Scroll down for more)"
           }
         },
         "05a74346-1eef-4c62-8038-dd320cef7c34": {
