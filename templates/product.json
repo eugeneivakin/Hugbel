@@ -351,32 +351,6 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_storytale_HpFK99": {
-      "type": "image-with-text-storytale",
-      "name": "Storytale",
-      "settings": {
-        "image": "{{ product.metafields.custom.storytale.value.image.value }}",
-        "image_position": "center center",
-        "layout": "image_first",
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "650px",
-        "enlarge_content": false,
-        "full_width": false,
-        "show_divider": false,
-        "mobile_layout": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
-        "use_custom_colors": false,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#1a1b18",
-        "colors_text": "#212326",
-        "colors_background": "#ffffff",
-        "gradient_background": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "1755181834274851c4": {
       "type": "apps",
       "blocks": {
@@ -423,6 +397,32 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_storytale_HpFK99": {
+      "type": "image-with-text-storytale",
+      "name": "Storytale",
+      "settings": {
+        "image": "{{ product.metafields.custom.storytale.value.image.value }}",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -430,8 +430,8 @@
     "faq_VyNWMP",
     "multicolumn_8QJWdj",
     "173238278513ce13c1",
-    "image_with_text_storytale_HpFK99",
     "1755181834274851c4",
-    "product-recommendations"
+    "product-recommendations",
+    "image_with_text_storytale_HpFK99"
   ]
 }
