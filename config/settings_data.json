@@ -2660,8 +2660,7 @@
     "custom_css": [
       "button[name=\"checkout\"] {background-color: green;}",
       ".product-form__submit.button.button--secondary.button--full-width {--font-button-size: 14px; background-color: green; color: white;}",
-      ".kqsiVA9Jf8LJAbxw8Bau .Xrk_DudB6JJ3t2Kh2_cU,.kqsiVA9Jf8LJAbxw8Bau .ElVMgDjOgshGFMIvg3se {font-size: 10px !important;}",
-      ".header__inline-menu > ul > li:nth-child(4) .header__menu-item,.header__inline-menu > ul > li:nth-child(1) .mega-menu__item:nth-child(2) .list-menu-child a {color: #e74c3c;}"
+      ".kqsiVA9Jf8LJAbxw8Bau .Xrk_DudB6JJ3t2Kh2_cU,.kqsiVA9Jf8LJAbxw8Bau .ElVMgDjOgshGFMIvg3se {font-size: 10px !important;}"
     ]
   }
 }
