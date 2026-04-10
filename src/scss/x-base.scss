@@ -35,3 +35,25 @@
     }
   }
 }
+
+a[href="#"] {
+  pointer-events: none;
+}
+
+.media--100px {
+  @include sm {
+    height: 100px;
+  }
+}
+
+.media--200px {
+  @include sm {
+    height: 200px;
+  }
+}
+
+.media--300px {
+  @include sm {
+    height: 300px;
+  }
+}
