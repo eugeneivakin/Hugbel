@@ -17,7 +17,7 @@
         "show_image": true,
         "apply_overlay": true,
         "image_position": "center center",
-        "image_ratio": "500px",
+        "image_ratio": "200px",
         "text_alignment": "center",
         "mobile_text_alignment": "center",
         "mobile_image_ratio": "200px",
