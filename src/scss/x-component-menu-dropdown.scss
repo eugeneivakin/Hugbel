@@ -36,7 +36,7 @@
 
   > .list-menu-dropdown .page-width {
     display: grid;
-    grid-template-columns: 1fr 20%;
+    grid-template-columns: 1fr 15.35%;
 
     &:has(> div:only-child) {
       grid-template-columns: 1fr;
@@ -49,7 +49,7 @@
     }
 
     &:has(.mega-menu__promo-wrapper--double) {
-      grid-template-columns: 1fr 40%;
+      grid-template-columns: 1fr 30.7%;
 
       .list-mega-menu {
         grid-template-columns: repeat(3, 1fr);
