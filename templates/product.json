@@ -39,6 +39,23 @@
             "show_badges": true
           }
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": false,
+            "swatch_type": "square",
+            "size_chart": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false
+          }
+        },
         "text_frmDPB": {
           "type": "text",
           "settings": {
@@ -69,23 +86,6 @@
             "icon": "ruler",
             "text": "<strong>Certified for safety</strong>",
             "text_style": "body"
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "show_variant_labels": true,
-            "picker_type": "button",
-            "enable_color_swatches": false,
-            "swatch_type": "square",
-            "size_chart": ""
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_quantity_selector": true,
-            "show_dynamic_checkout": false
           }
         },
         "custom_liquid_dCUFUd": {
@@ -158,12 +158,12 @@
         "custom_liquid_7XNFYH",
         "custom_liquid_8JBNqg",
         "price",
+        "variant_picker",
+        "buy_buttons",
         "text_frmDPB",
         "text_D6dhfF",
         "text_6fiX6W",
         "text_cfU4JU",
-        "variant_picker",
-        "buy_buttons",
         "custom_liquid_dCUFUd",
         "judge_me_reviews_review_snippet_widget_ktzYUf",
         "collapsible_description_7gVnmA",
