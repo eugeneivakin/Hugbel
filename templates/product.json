@@ -64,19 +64,19 @@
             "text_style": "body"
           }
         },
-        "text_frmDPB": {
-          "type": "text",
-          "settings": {
-            "icon": "star",
-            "text": "<strong>2 years warranty</strong>",
-            "text_style": "body"
-          }
-        },
         "text_6fiX6W": {
           "type": "text",
           "settings": {
             "icon": "truck",
             "text": "<strong>Free shipping</strong>",
+            "text_style": "body"
+          }
+        },
+        "text_frmDPB": {
+          "type": "text",
+          "settings": {
+            "icon": "star",
+            "text": "<strong>2 years warranty</strong>",
             "text_style": "body"
           }
         },
@@ -161,8 +161,8 @@
         "variant_picker",
         "buy_buttons",
         "text_D6dhfF",
-        "text_frmDPB",
         "text_6fiX6W",
+        "text_frmDPB",
         "text_cfU4JU",
         "custom_liquid_dCUFUd",
         "judge_me_reviews_review_snippet_widget_ktzYUf",
