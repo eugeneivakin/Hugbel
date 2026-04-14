@@ -183,6 +183,7 @@
         "blocks": {
           "mega_menu_ft8Pz9": {
             "type": "mega_menu",
+            "disabled": true,
             "settings": {
               "heading": "shop by room",
               "narrow": true,
@@ -204,6 +205,7 @@
           },
           "mega_menu_NWX4WA": {
             "type": "mega_menu",
+            "disabled": true,
             "settings": {
               "heading": "by style",
               "narrow": true,
@@ -224,6 +226,7 @@
           },
           "mega_menu_QcWdcQ": {
             "type": "mega_menu",
+            "disabled": true,
             "settings": {
               "heading": "shop",
               "narrow": true,
