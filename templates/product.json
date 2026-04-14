@@ -56,19 +56,19 @@
             "show_dynamic_checkout": false
           }
         },
-        "text_frmDPB": {
-          "type": "text",
-          "settings": {
-            "icon": "star",
-            "text": "<strong>2 years warranty</strong>",
-            "text_style": "body"
-          }
-        },
         "text_D6dhfF": {
           "type": "text",
           "settings": {
             "icon": "box",
             "text": "<strong>30 day return policy</strong>",
+            "text_style": "body"
+          }
+        },
+        "text_frmDPB": {
+          "type": "text",
+          "settings": {
+            "icon": "star",
+            "text": "<strong>2 years warranty</strong>",
             "text_style": "body"
           }
         },
@@ -160,8 +160,8 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "text_frmDPB",
         "text_D6dhfF",
+        "text_frmDPB",
         "text_6fiX6W",
         "text_cfU4JU",
         "custom_liquid_dCUFUd",
