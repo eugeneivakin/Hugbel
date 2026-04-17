@@ -48,7 +48,7 @@
                       }}
                     </div>
                   {%- elsif childlink.links[0].type == 'collection_link'
-                    and childlink.links[1].object.image
+                    and childlink.links[0].object.image
                     and block.settings.show_menu_image
                   -%}
                     <div class="image-animate media media--wide">
