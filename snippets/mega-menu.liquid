@@ -7,7 +7,7 @@
 <mega-menu class="is-megamenu{% if block.settings.show_menu_image %}{% if promo_images %} show-images{% else %} show-images-without-promo{% endif %}{% endif %}">
   <a
     href="{{ link.url }}"
-    class="header__menu-item{% if link.active or link.child_active %} header__active-menu-item{% endif %} header__menu-item--top list-menu__item focus-inset"
+    class="header__menu-item{% if link.active or link.child_active %} header__active-menu-item{% endif %} header__menu-item--top list-menu__item focus-inset {{ highlight_item_class }}"
     {% if link.current %}
       aria-current="page"
     {% endif %}
@@ -54,6 +54,19 @@
                     <div class="image-animate media media--wide">
                       {{
                         childlink.links[0].object.image
+                        | image_url: width: 1100
+                        | image_tag:
+                          loading: 'lazy',
+                          class: 'motion-reduce',
+                          sizes: sizes,
+                          widths: '165, 360, 535, 750, 940, 1100',
+                          is: 'lazy-image'
+                      }}
+                    </div>
+                  {%- elsif childlink.links[1].type == 'collection_link' and block.settings.show_menu_image -%}
+                    <div class="image-animate media media--wide">
+                      {{
+                        collections['all-products'].featured_image
                         | image_url: width: 1100
                         | image_tag:
                           loading: 'lazy',

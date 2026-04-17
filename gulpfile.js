@@ -20,6 +20,16 @@ function compilescss() {
   );
 }
 
+function compiledefaultscss() {
+  return src("src/scss/default-styles/*.scss")
+    .pipe(sass())
+    .pipe(prefix())
+    .pipe(minify())
+    .pipe(wait(1000))
+    .pipe(rename({ dirname: "" }))
+    .pipe(dest("assets"));
+}
+
 function jsmin() {
   return src("src/js/*.js").pipe(terser()).pipe(dest("assets"));
 }
@@ -48,9 +58,11 @@ function fonts() {
 
 function watchTask() {
   watch("src/scss/**/*.scss", compilescss);
+  watch("src/scss/**/*.scss", compiledefaultscss);
   watch("src/js/*.js", jsmin);
   watch("src/images/*.{jpg,png}", optimizeImg);
 }
 
 exports.default = series(compilescss, /*fonts, jsmin, optimizeImg,*/ watchTask);
+exports.compiledefaultscss = compiledefaultscss;
 exports.minifyAssetsJS = minifyAssetsJS;

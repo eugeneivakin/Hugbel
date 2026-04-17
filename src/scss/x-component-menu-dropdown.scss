@@ -9,6 +9,11 @@
   }
 }
 
+.header__menu-item--top.highlighted {
+  --color-link: 255, 0, 0;
+  --color-header-border: 255, 0, 0;
+}
+
 .is-active > .header__menu-item {
   .icon-caret {
     transform: rotate(180deg);
