@@ -211,6 +211,7 @@
           "mobile_logo_height": 30,
           "logo_position": "middle-left",
           "menu": "main-menu-miledev-v3",
+          "highlight_items": "2",
           "enable_dropdown_menu": true,
           "show_line_separator": true,
           "cart_icon": "cart",

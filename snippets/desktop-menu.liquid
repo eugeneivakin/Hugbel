@@ -10,6 +10,12 @@
 <nav class="header__inline-menu{% if offset > 0 %} header__inline-menu-split{% endif %}">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in menu.links limit: limit offset: offset -%}
+      {% if section.settings.highlight_items contains forloop.index %}
+        {% assign highlight_item_class = 'highlighted' %}
+      {% else %}
+        {% assign highlight_item_class = '' %}
+      {% endif %}
+
       {%- liquid
         assign enable_mega_menu = false
         if enable_dropdown_menu
@@ -29,10 +35,13 @@
         {%- if link.links != blank -%}
           {%- if enable_dropdown_menu -%}
             {%- if enable_mega_menu -%}
-              {% render 'mega-menu', link: link, block: mega_menu_block %}
+              {% render 'mega-menu', link: link, block: mega_menu_block, highlight_item_class: highlight_item_class %}
             {%- else -%}
               <dropdown-menu>
-                <a href="{{ link.url }}" class="header__menu-item{% if link.active or link.child_active %} header__active-menu-item{% endif %} header__menu-item--top list-menu__item focus-inset">
+                <a
+                  href="{{ link.url }}"
+                  class="header__menu-item{% if link.active or link.child_active %} header__active-menu-item{% endif %} header__menu-item--top list-menu__item focus-inset {{ highlight_item_class }}"
+                >
                   <span class="label">{{ link.title | escape }}</span>
                   {% render 'icon', icon: 'caret' %}
                 </a>
@@ -42,13 +51,22 @@
                       <li>
                         {%- if childlink.links == blank -%}
                           <dropdown-menu>
-                            <a href="{{ childlink.url }}" class="header__menu-item list-menu__item focus-inset{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                            <a
+                              href="{{ childlink.url }}"
+                              class="header__menu-item list-menu__item focus-inset{% if childlink.current %} list-menu__item--active{% endif %}"
+                              {% if childlink.current %}
+                                aria-current="page"
+                              {% endif %}
+                            >
                               <span class="label">{{ childlink.title | escape }}</span>
                             </a>
                           </dropdown-menu>
                         {%- else -%}
                           <dropdown-menu>
-                            <a href="{{ childlink.url }}" class="header__menu-item{% if childlink.active or childlink.child_active %} header__active-menu-item{% endif %} list-menu__item focus-inset">
+                            <a
+                              href="{{ childlink.url }}"
+                              class="header__menu-item{% if childlink.active or childlink.child_active %} header__active-menu-item{% endif %} list-menu__item focus-inset"
+                            >
                               <span class="label">{{ childlink.title | escape }}</span>
                               {% render 'icon', icon: 'caret' %}
                             </a>
@@ -56,7 +74,13 @@
                               <ul class="list-menu" role="list" tabindex="-1">
                                 {%- for grandchildlink in childlink.links -%}
                                   <li>
-                                    <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item focus-inset{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                    <a
+                                      href="{{ grandchildlink.url }}"
+                                      class="header__menu-item list-menu__item focus-inset{% if grandchildlink.current %} list-menu__item--active{% endif %}"
+                                      {% if grandchildlink.current %}
+                                        aria-current="page"
+                                      {% endif %}
+                                    >
                                       <span class="label">{{ grandchildlink.title | escape }}</span>
                                     </a>
                                   </li>
@@ -74,7 +98,7 @@
           {%- else -%}
             <menu-drawer>
               <details>
-                <summary class="header__menu-item{% if link.active or link.child_active %} header__active-menu-item{% endif %} header__menu-item--top list-menu__item focus-inset">
+                <summary class="header__menu-item{% if link.active or link.child_active %} header__active-menu-item{% endif %} header__menu-item--top list-menu__item focus-inset {{ highlight_item_class }}">
                   <span class="label">{{ link.title | escape }}</span>
                   {% render 'icon', icon: 'caret' %}
                 </summary>
@@ -84,11 +108,22 @@
                       <li data-animate data-animate-delay-{{ forloop.index }}>
                         {%- if childlink.links == blank -%}
                           {%- if childlink.type == 'collection_link' -%}
-                            <list-menu-item data-title="{{ childlink.title | escape }}" data-url="{{ childlink.url }}" data-image="{% if childlink.object.image %}{{ childlink.object.image | image_url: width: 460 }}{% endif %}" data-description="{{ childlink.object.description | strip_html | truncatewords: 30 }}">
+                            <list-menu-item
+                              data-title="{{ childlink.title | escape }}"
+                              data-url="{{ childlink.url }}"
+                              data-image="{% if childlink.object.image %}{{ childlink.object.image | image_url: width: 460 }}{% endif %}"
+                              data-description="{{ childlink.object.description | strip_html | truncatewords: 30 }}"
+                            >
                           {%- endif -%}
-                              <a href="{{ childlink.url }}" class="header__menu-item list-menu__item focus-inset{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                <span class="label">{{ childlink.title | escape }}</span>
-                              </a>
+                          <a
+                            href="{{ childlink.url }}"
+                            class="header__menu-item list-menu__item focus-inset{% if childlink.current %} list-menu__item--active{% endif %}"
+                            {% if childlink.current %}
+                              aria-current="page"
+                            {% endif %}
+                          >
+                            <span class="label">{{ childlink.title | escape }}</span>
+                          </a>
                           {%- if childlink.type == 'collection_link' -%}
                             </list-menu-item>
                           {%- endif -%}
@@ -96,12 +131,17 @@
                           <details>
                             <summary>
                               {%- if childlink.type == 'collection_link' -%}
-                                <list-menu-item data-title="{{ childlink.title | escape }}" data-url="{{ childlink.url }}" data-image="{% if childlink.object.image %}{{ childlink.object.image | image_url: width: 460 }}{% endif %}" data-description="{{ childlink.object.description | strip_html | truncatewords: 30 }}">
+                                <list-menu-item
+                                  data-title="{{ childlink.title | escape }}"
+                                  data-url="{{ childlink.url }}"
+                                  data-image="{% if childlink.object.image %}{{ childlink.object.image | image_url: width: 460 }}{% endif %}"
+                                  data-description="{{ childlink.object.description | strip_html | truncatewords: 30 }}"
+                                >
                               {%- endif -%}
-                                  <div class="header__menu-item{% if childlink.active or childlink.child_active %} header__active-menu-item{% endif %} list-menu__item focus-inset">
-                                    <span class="label">{{ childlink.title | escape }}</span>
-                                    {% render 'icon', icon: 'caret' %}
-                                  </div>
+                              <div class="header__menu-item{% if childlink.active or childlink.child_active %} header__active-menu-item{% endif %} list-menu__item focus-inset">
+                                <span class="label">{{ childlink.title | escape }}</span>
+                                {% render 'icon', icon: 'caret' %}
+                              </div>
                               {%- if childlink.type == 'collection_link' -%}
                                 </list-menu-item>
                               {%- endif -%}
@@ -110,11 +150,22 @@
                               {%- for grandchildlink in childlink.links -%}
                                 <li>
                                   {%- if grandchildlink.type == 'collection_link' -%}
-                                    <list-menu-item data-title="{{ grandchildlink.title | escape }}" data-url="{{ grandchildlink.url }}" data-image="{% if grandchildlink.object.image %}{{ grandchildlink.object.image | image_url: width: 460 }}{% endif %}" data-description="{{ grandchildlink.object.description | strip_html | truncatewords: 30 }}">
+                                    <list-menu-item
+                                      data-title="{{ grandchildlink.title | escape }}"
+                                      data-url="{{ grandchildlink.url }}"
+                                      data-image="{% if grandchildlink.object.image %}{{ grandchildlink.object.image | image_url: width: 460 }}{% endif %}"
+                                      data-description="{{ grandchildlink.object.description | strip_html | truncatewords: 30 }}"
+                                    >
                                   {%- endif -%}
-                                      <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item focus-inset{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                        <span class="label">{{ grandchildlink.title | escape }}</span>
-                                      </a>
+                                  <a
+                                    href="{{ grandchildlink.url }}"
+                                    class="header__menu-item list-menu__item focus-inset{% if grandchildlink.current %} list-menu__item--active{% endif %}"
+                                    {% if grandchildlink.current %}
+                                      aria-current="page"
+                                    {% endif %}
+                                  >
+                                    <span class="label">{{ grandchildlink.title | escape }}</span>
+                                  </a>
                                   {%- if grandchildlink.type == 'collection_link' -%}
                                     </list-menu-item>
                                   {%- endif -%}
@@ -133,10 +184,16 @@
           {%- endif -%}
         {%- else -%}
           {%- if enable_mega_menu -%}
-            {% render 'mega-menu', link: link, block: mega_menu_block %}
+            {% render 'mega-menu', link: link, block: mega_menu_block, highlight_item_class: highlight_item_class %}
           {%- else -%}
             <dropdown-menu>
-              <a href="{{ link.url }}" class="header__menu-item{% if link.current %} header__active-menu-item{% endif %} header__menu-item--top list-menu__item focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+              <a
+                href="{{ link.url }}"
+                class="header__menu-item{% if link.current %} header__active-menu-item{% endif %} header__menu-item--top list-menu__item focus-inset {{ highlight_item_class }}"
+                {% if link.current %}
+                  aria-current="page"
+                {% endif %}
+              >
                 <span class="label">{{ link.title | escape }}</span>
               </a>
             </dropdown-menu>
