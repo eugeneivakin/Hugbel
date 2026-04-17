@@ -181,35 +181,12 @@
       "header": {
         "type": "header",
         "blocks": {
-          "mega_menu_ft8Pz9": {
+          "mega_menu_eBYVJr": {
             "type": "mega_menu",
-            "disabled": true,
             "settings": {
-              "heading": "shop by room",
+              "heading": "shop by",
               "narrow": true,
-              "show_menu_image": false,
-              "promo_image_1": "shopify://shop_images/marble-alabaster-atelier.png",
-              "promo_image_ratio_1": "adapt",
-              "promo_image_position_1": "center center",
-              "promo_heading_1": "Natural stone lighting",
-              "promo_text_1": "",
-              "promo_overlay_content_1": false,
-              "promo_link_1": "shopify://collections/marble",
-              "promo_image_ratio_2": "adapt",
-              "promo_image_position_2": "center center",
-              "promo_heading_2": "",
-              "promo_text_2": "",
-              "promo_overlay_content_2": false,
-              "promo_link_2": ""
-            }
-          },
-          "mega_menu_NWX4WA": {
-            "type": "mega_menu",
-            "disabled": true,
-            "settings": {
-              "heading": "by style",
-              "narrow": true,
-              "show_menu_image": false,
+              "show_menu_image": true,
               "promo_image_ratio_1": "adapt",
               "promo_image_position_1": "center center",
               "promo_heading_1": "",
@@ -223,35 +200,10 @@
               "promo_overlay_content_2": false,
               "promo_link_2": ""
             }
-          },
-          "mega_menu_QcWdcQ": {
-            "type": "mega_menu",
-            "disabled": true,
-            "settings": {
-              "heading": "shop",
-              "narrow": true,
-              "show_menu_image": false,
-              "promo_image_1": "shopify://shop_images/ceiling-lights-collection-banner.png",
-              "promo_image_ratio_1": "landscape",
-              "promo_image_position_1": "center center",
-              "promo_heading_1": "Explore our collection",
-              "promo_text_1": "",
-              "promo_overlay_content_1": false,
-              "promo_link_1": "shopify://collections/ceiling-lamps",
-              "promo_image_2": "shopify://shop_images/pendant-light-atelier.png",
-              "promo_image_ratio_2": "adapt",
-              "promo_image_position_2": "center center",
-              "promo_heading_2": "Design-forward lighting",
-              "promo_text_2": "",
-              "promo_overlay_content_2": false,
-              "promo_link_2": "shopify://collections/pendant-lamp"
-            }
           }
         },
         "block_order": [
-          "mega_menu_ft8Pz9",
-          "mega_menu_NWX4WA",
-          "mega_menu_QcWdcQ"
+          "mega_menu_eBYVJr"
         ],
         "settings": {
           "logo": "shopify://shop_images/Hugbel_Main_Logo.png",
