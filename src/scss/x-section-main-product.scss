@@ -25,10 +25,10 @@
       padding: 0 5px 0 0;
       width: 50%;
 
-      @include sm {
-        display: block;
-        width: auto;
-      }
+      // @include sm {
+      //   display: block;
+      //   width: auto;
+      // }
     }
 
     a {
