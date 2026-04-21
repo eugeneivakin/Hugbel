@@ -5,6 +5,16 @@
   padding-bottom: 1.5rem;
 }
 
+.header--middle-left .header__right {
+  @include lg {
+    margin-inline-start: 0;
+  }
+}
+
+.header__menu-item {
+  letter-spacing: 0.15em;
+}
+
 .jdgm-carousel-wrapper {
   padding: 0 !important;
   width: 100% !important;
