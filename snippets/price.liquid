@@ -27,7 +27,7 @@
       {%- capture from_price -%}
         <price-money><bdi>{{ price | money }}</bdi></price-money>
       {%- endcapture -%}
-      {{ 'products.product.price.from_price_html' | t: price: from_price }}
+      {{ from_price }}
     {%- else -%}
       <price-money><bdi>{{ product.price_min | money }}</bdi></price-money>
       <price-money><bdi>{{ product.price_max | money }}</bdi></price-money>
