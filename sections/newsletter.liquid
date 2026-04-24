@@ -3,7 +3,7 @@
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
     --gradient-background: {% if section.settings.gradient_background != blank %}{{ section.settings.gradient_background }}{% else %}{{ section.settings.colors_background }}{% endif %};
-    --color-background: {{ section.settings.colors_background.red }}, {{ section.settings.colors_background.green }}, {{ section.settings.colors_background.blue }};
+    --color-background: {{ section.settings.colors_background.red }}, {{ section.settings.colors_background.green }}, {{ section.settings.colors_background.blue }}, {{ section.settings.colors_background.alpha }};
     --color-foreground: {{ section.settings.colors_text.red }}, {{ section.settings.colors_text.green }}, {{ section.settings.colors_text.blue }};
     --color-border: {{ section.settings.colors_border.red }}, {{ section.settings.colors_border.green }}, {{ section.settings.colors_border.blue }};
     --color-heading: var(--color-foreground);
@@ -12,6 +12,7 @@
 {%- endstyle -%}
 
 {{ 'section-newsletter.css' | asset_url | stylesheet_tag }}
+{{ 'x-section-newsletter.css' | asset_url | stylesheet_tag }}
 
 <link rel="stylesheet" href="{{ 'component-newsletter.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}</noscript>
@@ -23,7 +24,7 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
-              <{{ block.settings.heading_tag }} class="h4" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</{{ block.settings.heading_tag }}>
+              <{{ block.settings.heading_tag }} class="h1" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</{{ block.settings.heading_tag }}>
             {%- when 'paragraph' -%}
               <p class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.paragraph }}</p>
             {%- when 'email_form' -%}

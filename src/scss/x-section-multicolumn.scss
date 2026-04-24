@@ -23,5 +23,9 @@
 
   .typeset {
     font-size: 1.4rem;
+
+    @include sm {
+      font-size: 1.6rem;
+    }
   }
 }

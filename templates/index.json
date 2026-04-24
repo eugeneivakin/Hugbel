@@ -75,7 +75,7 @@
             "icon": "none",
             "title": "2-Year Warranty",
             "title_size": "h3",
-            "text": "<p>Every fixture is fully covered for one year.</p><p>Quality built to last.</p>",
+            "text": "<p>Every fixture is fully covered for two year.</p><p>Quality built to last.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -188,7 +188,7 @@
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "bestsellers",
-        "products_to_show": 4,
+        "products_to_show": 8,
         "show_view_all": true,
         "show_divider": false,
         "heading": "Best Sellers",
@@ -496,7 +496,7 @@
         "show_divider": false,
         "colors_text": "#1a1b18",
         "colors_border": "#d2d5d9",
-        "colors_background": "#efefef",
+        "colors_background": "rgba(0,0,0,0)",
         "gradient_background": "",
         "padding_top": 36,
         "padding_bottom": 36
