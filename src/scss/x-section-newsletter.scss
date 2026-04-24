@@ -1,0 +1,13 @@
+@use "mixins/media" as *;
+
+.newsletter__wrapper {
+  padding: 0;
+  text-align: center;
+
+  @include sm {
+  }
+
+  .newsletter-form__field-wrapper {
+    margin: 0 auto;
+  }
+}
