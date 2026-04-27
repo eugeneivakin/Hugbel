@@ -63,7 +63,7 @@
             "icon": "none",
             "title": "Free Shipping",
             "title_size": "h2",
-            "text": "<p>Complimentary standard shipping on all orders.</p><p>US stock ships in 1–3 business days.</p>",
+            "text": "<p>Complimentary shipping on every order, no minimum required.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -75,7 +75,7 @@
             "icon": "none",
             "title": "2-Year Warranty",
             "title_size": "h2",
-            "text": "<p>Every fixture is fully covered for two year.</p><p>Quality built to last.</p>",
+            "text": "<p>Every fixture is backed by a full two-year warranty. Crafted to endure.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -87,7 +87,7 @@
             "icon": "none",
             "title": "Expert Support",
             "title_size": "h2",
-            "text": "<p>Lighting specialists ready to help you find the perfect piece.</p>",
+            "text": "<p>Our lighting specialists are on hand to guide you to the perfect piece.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -97,9 +97,21 @@
           "type": "column",
           "settings": {
             "icon": "none",
-            "title": "Custom & 3D Service",
+            "title": "Certified Quality",
             "title_size": "h2",
-            "text": "<p>Bespoke lighting solutions with full 3D visualisation support.</p>",
+            "text": "<p>Every piece meets rigorous safety and quality standards — built with confidence, designed to last.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_LKG3Cw": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "title": "Custom Service",
+            "title_size": "h2",
+            "text": "<p>Tailored lighting solutions designed to your space.</p>",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -110,7 +122,8 @@
         "column_PhKXa8",
         "column_Tfgrfk",
         "column_JJg9AW",
-        "column_QFkF7C"
+        "column_QFkF7C",
+        "column_LKG3Cw"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {

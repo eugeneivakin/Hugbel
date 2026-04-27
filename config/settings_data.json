@@ -241,14 +241,16 @@
             "type": "text",
             "settings": {
               "heading": "about us",
-              "subtext": "<p>Hugbel designs lighting with a focus on material integrity and long-term reliability. Through direct manufacturing partnerships and rigorous quality standards, we create lighting trusted by both homeowners and design professionals.</p><p><a href=\"https://hugbel.com/apps/netwise/application\" title=\"https://hugbel.com/apps/netwise/application\"><strong>Trade Program</strong></a></p><p><a href=\"https://af.uppromote.com/hugbel/register\" target=\"_blank\" title=\"https://af.uppromote.com/hugbel/register\"><strong>Affiliate Program</strong></a></p><p><a href=\"/blogs/news\" title=\"Blogs\"><strong>Hugbel Blogs</strong></a></p><p><br/></p><h1></h1>"
+              "subtext": "<p>Hugbel designs lighting with a focus on material integrity and long-term reliability. Through direct manufacturing partnerships and rigorous quality standards, we create lighting trusted by both homeowners and design professionals.</p><p><a href=\"https://hugbel.com/apps/netwise/application\" title=\"https://hugbel.com/apps/netwise/application\"><strong>Trade Program</strong></a></p><p><a href=\"https://af.uppromote.com/hugbel/register\" target=\"_blank\" title=\"https://af.uppromote.com/hugbel/register\"><strong>Affiliate Program</strong></a></p><p><a href=\"/blogs/news\" title=\"Blogs\"><strong>Hugbel Blogs</strong></a></p><p><br/></p><h1></h1>",
+              "show_social": false
             }
           },
           "text_kLNnGB": {
             "type": "text",
             "settings": {
               "heading": "Contact us",
-              "subtext": "<p><a href=\"/pages/trade-page\" title=\"Trade Program\"><strong>Trade Program</strong></a></p><p><a href=\"https://af.uppromote.com/hugbel/register\" target=\"_blank\" title=\"https://af.uppromote.com/hugbel/register\"><strong>Affiliate Program</strong></a></p><p><strong>Our customer service hours are Monday to Friday, 9am–5pm.</strong><br/><br/>Phone support is available during these hours.</p><p></p><h1></h1>"
+              "subtext": "<p><a href=\"/pages/trade-page\" title=\"Trade Program\"><strong>Trade Program</strong></a></p><p><a href=\"https://af.uppromote.com/hugbel/register\" target=\"_blank\" title=\"https://af.uppromote.com/hugbel/register\"><strong>Affiliate Program</strong></a></p><p><strong>Our customer service hours are Monday to Friday, 9am–5pm.</strong><br/><br/>Phone support is available during these hours.</p><p></p><h1></h1>",
+              "show_social": true
             }
           },
           "link_list_QUKHfk": {

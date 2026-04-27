@@ -24,6 +24,13 @@
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'disclosure.css' | asset_url }}" media="print" onload="this.media='all'">
 
+<link
+  rel="stylesheet"
+  href="{{ 'x-section-footer.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'"
+>
+
 <noscript>{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-accordion.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}</noscript>
@@ -61,6 +68,14 @@
                         <div class="footer-block__details-content rte">
                           {{ block.settings.subtext }}
                         </div>
+                        {%- if block.settings.show_social -%}
+                          <ul class="footer__list-social list-unstyled list-social" role="list">
+                            {% render 'social-icons' %}
+                            <li class="list-social__item--placeholder">
+                              {{ 'sections.footer.social_placeholder' | t }}
+                            </li>
+                          </ul>
+                        {%- endif -%}
                       {%- when 'link_list' -%}
                         {%- if block.settings.menu != blank -%}
                           <ul class="footer-block__details-content list-unstyled">
@@ -530,7 +545,13 @@
           "id": "subtext",
           "default": "<p>Share information about your brand with your customers.</p>",
           "label": "t:sections.footer.blocks.text.settings.subtext.label"
-        }
+        },
+        {
+      "type": "checkbox",
+      "id": "show_social",
+      "default": false,
+      "label": "t:sections.footer.settings.show_social.label"
+    },
       ]
     },
     {
