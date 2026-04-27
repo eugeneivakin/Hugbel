@@ -1,0 +1,45 @@
+{{ 'x-section-instafeed.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width">
+  <div class="grid grid--2-col grid--2-col grid--4-col-tablet">
+    {% for block in section.blocks %}
+      {% unless block.settings.image == blank %}
+        <a href="{{ block.settings.url }}" target="_blank" rel="noopener" class="grid__item">
+          {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: 'lazy' }}
+        </a>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "X: Instafeed",
+  "class": "shopify-section--instafeed",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets": [
+    {
+      "name": "X: Instafeed"
+    }
+  ]
+}
+{% endschema %}

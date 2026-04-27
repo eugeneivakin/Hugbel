@@ -480,7 +480,7 @@
             "link_alignment": "left",
             "link_color": "#000000",
             "background_color": "",
-            "feed_id": "",
+            "feed_id": "DW2wt0RE8pL",
             "html_area": ""
           }
         }
@@ -488,12 +488,92 @@
       "block_order": [
         "instafeed_app_block_YHi8Ka"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true,
         "show_divider": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "instafeed_mBrAJ8": {
+      "type": "instafeed",
+      "blocks": {
+        "link_EcgcEk": {
+          "type": "link",
+          "settings": {
+            "url": "https://www.instagram.com/p/DW2wt0RE8pL/",
+            "image": "shopify://shop_images/designbycarley_-_DW2wt0RE8pL.jpg",
+            "html": "",
+            "img": ""
+          }
+        },
+        "link_f6fXYT": {
+          "type": "link",
+          "settings": {
+            "url": "https://www.instagram.com/p/DVufhDhksre/",
+            "image": "shopify://shop_images/caitlin.bailey_-_DVufhDhksre_-_1.jpg",
+            "html": "",
+            "img": ""
+          }
+        },
+        "link_CMxFyd": {
+          "type": "link",
+          "settings": {
+            "url": "https://www.instagram.com/p/DVjhrHSEkrq/?img_index=2",
+            "image": "shopify://shop_images/caitlin.bailey_-_DVjhrHSEkrq_-_2.jpg",
+            "html": "",
+            "img": ""
+          }
+        },
+        "link_XCgCUp": {
+          "type": "link",
+          "settings": {
+            "url": "https://www.instagram.com/p/DSHdhCUE7VN/",
+            "image": "shopify://shop_images/renu_living_-_DSHdhCUE7VN.jpg",
+            "html": "",
+            "img": ""
+          }
+        },
+        "link_jNgjGq": {
+          "type": "link",
+          "settings": {
+            "url": "https://www.instagram.com/p/DS8MFBNkjO2/",
+            "image": "shopify://shop_images/caitlin.bailey_-_DS8MFBNkjO2.jpg",
+            "html": "",
+            "img": ""
+          }
+        },
+        "link_qAFVyh": {
+          "type": "link",
+          "settings": {
+            "url": "https://www.instagram.com/p/DStHG7EEj53/",
+            "image": "shopify://shop_images/caitlin.bailey_-_DStHG7EEj53.jpg",
+            "html": "",
+            "img": ""
+          }
+        },
+        "link_Ytzaae": {
+          "type": "link",
+          "settings": {
+            "url": "https://www.instagram.com/p/DW8YOnYAUAy/?img_index=3",
+            "image": "shopify://shop_images/lavaurstudio_-_DW8YOnYAUAy_-_3.jpg",
+            "html": "",
+            "img": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_EcgcEk",
+        "link_f6fXYT",
+        "link_CMxFyd",
+        "link_XCgCUp",
+        "link_jNgjGq",
+        "link_qAFVyh",
+        "link_Ytzaae"
+      ],
+      "name": "Instafeed",
+      "settings": {}
     },
     "custom_liquid_mApfX6": {
       "type": "custom-liquid",
@@ -604,6 +684,7 @@
     "image_with_text_naRtJY",
     "judgeme_carousel_section_9fBdRB",
     "1777273432a8cf7272",
+    "instafeed_mBrAJ8",
     "custom_liquid_mApfX6",
     "newsletter_mMUKJ4",
     "featured_blog_jAxqAb"
