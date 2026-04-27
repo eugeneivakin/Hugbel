@@ -1,0 +1,14 @@
+@use "mixins/media" as *;
+
+.footer-block {
+  .footer__list-social {
+    .list-social__item {
+      display: none;
+    }
+
+    .list-social__item--whatsapp,
+    .list-social__item--email {
+      display: list-item;
+    }
+  }
+}
