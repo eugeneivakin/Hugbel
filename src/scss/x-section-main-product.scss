@@ -1,5 +1,16 @@
 @use "mixins/media" as *;
 
+.product__media-wrapper {
+  .product__media {
+    &.media--square {
+      aspect-ratio: 1;
+      max-width: 64vh;
+      margin: 0 auto;
+      padding-bottom: 0;
+    }
+  }
+}
+
 .product-form__quantity + .product-form__submit {
   --font-button-size: 14px;
 }
